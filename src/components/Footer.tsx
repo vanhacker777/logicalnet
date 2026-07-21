@@ -6,13 +6,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">LN</span>
-              </div>
-              <span className="text-white font-bold text-xl">
-                Logical<span className="text-brand">Net</span>
-              </span>
+            <div className="mb-4">
+              <img src="/logo.png" alt="Logical Net" className="h-14 w-auto" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
               Empresa de IT dedicada a PYMEs. Soluciones innovadoras de Inteligencia Artificial, automatizacion, desarrollo web y soporte tecnico.

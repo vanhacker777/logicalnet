@@ -27,13 +27,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">LN</span>
-            </div>
-            <span className="text-white font-bold text-xl tracking-tight">
-              Logical<span className="text-brand">Net</span>
-            </span>
+          <a href="#" className="flex items-center">
+            <img src="/logo.png" alt="Logical Net" className="h-14 w-auto" />
           </a>
 
           <div className="hidden md:flex items-center gap-8">
