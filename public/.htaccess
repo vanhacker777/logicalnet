@@ -1,3 +1,9 @@
+AddType application/javascript .js
+AddType application/javascript .mjs
+AddType text/css .css
+AddType application/json .json
+AddType image/svg+xml .svg
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
