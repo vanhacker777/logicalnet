@@ -4,21 +4,21 @@ const cases = [
     description: 'Implementamos un asistente IA que responde dudas frecuentes, gestiona citas y reduce un 70% el tiempo de atencion manual.',
     result: '+70%',
     resultLabel: 'eficiencia',
-    image: '/img-datacenter.jpg',
+    image: '/img-ai-brain.jpg',
   },
   {
     title: 'Bot Comercial IA para Captacion',
     description: 'Creamos un bot que capta leads, califica clientes y envia propuestas automaticas, aumentando un 40% las conversiones.',
     result: '+40%',
     resultLabel: 'conversiones',
-    image: '/img-analytics.jpg',
+    image: '/img-cybersecurity.jpg',
   },
   {
     title: 'Optimizacion Web con IA',
     description: 'Analizamos la web con IA, corregimos errores, mejoramos SEO y generamos contenido optimizado, aumentando un 55% el trafico.',
     result: '+55%',
     resultLabel: 'trafico',
-    image: '/img-tech.jpg',
+    image: '/img-dashboard.jpg',
   },
 ];
 

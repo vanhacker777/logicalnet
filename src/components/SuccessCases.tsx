@@ -4,14 +4,14 @@ const successCases = [
     description: 'Implementamos un sistema de gestion de proyectos que redujo el tiempo de entrega en un 30%.',
     metric: '-30%',
     metricLabel: 'tiempo de entrega',
-    image: '/img-datacenter.jpg',
+    image: '/img-ai-brain.jpg',
   },
   {
     company: 'FinTech Innovators',
     description: 'Desarrollamos una aplicacion personalizada que aumento su base de usuarios en un 50% en solo seis meses.',
     metric: '+50%',
     metricLabel: 'usuarios',
-    image: '/img-analytics.jpg',
+    image: '/img-cybersecurity.jpg',
   },
 ];
 

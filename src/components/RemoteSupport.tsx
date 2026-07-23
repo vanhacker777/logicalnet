@@ -15,7 +15,7 @@ export default function RemoteSupport() {
           <div className="grid lg:grid-cols-2 gap-0">
             <div className="relative">
               <img
-                src="/img-team.jpg"
+                src="/img-team-collab.jpg"
                 alt="Soporte tecnico remoto"
                 className="w-full h-64 lg:h-full object-cover"
                 loading="lazy"

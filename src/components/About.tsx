@@ -24,7 +24,7 @@ export default function About() {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden">
               <img
-                src="/img-team.jpg"
+                src="/img-office.jpg"
                 alt="Equipo Logical Net"
                 className="w-full h-96 lg:h-[420px] object-cover"
                 loading="lazy"
