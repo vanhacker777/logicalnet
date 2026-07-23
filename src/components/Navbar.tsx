@@ -15,8 +15,9 @@ export default function Navbar() {
     { label: 'IA & Automatizacion', href: '/#servicios' },
     { label: 'Desarrollo Web', href: '/#proyectos' },
     { label: 'Soporte IT', href: '/#soporte' },
-    { label: 'Portfolio', href: '/portfolio' },
   ];
+
+  const portfolioLink = { label: 'Portfolio', href: '/portfolio' };
 
   return (
     <nav
@@ -34,24 +35,20 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              link.href.startsWith('/') && !link.href.startsWith('/#') ? (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="text-apple-gray-1 hover:text-white transition-colors text-sm font-medium"
-                >
-                  {link.label}
-                </Link>
-              ) : (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-apple-gray-1 hover:text-white transition-colors text-sm font-medium"
-                >
-                  {link.label}
-                </a>
-              )
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-apple-gray-1 hover:text-white transition-colors text-sm font-medium"
+              >
+                {link.label}
+              </a>
             ))}
+            <Link
+              to={portfolioLink.href}
+              className="text-apple-gray-1 hover:text-white transition-colors text-sm font-medium"
+            >
+              {portfolioLink.label}
+            </Link>
             <a
               href="https://wa.me/34620211374"
               target="_blank"
@@ -93,26 +90,22 @@ export default function Navbar() {
         <div className="lg:hidden bg-black/95 backdrop-blur-xl border-t border-white/5">
           <div className="px-6 py-6 space-y-4">
             {navLinks.map((link) => (
-              link.href.startsWith('/') && !link.href.startsWith('/#') ? (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className="block text-apple-gray-1 hover:text-white py-2 text-base"
-                >
-                  {link.label}
-                </Link>
-              ) : (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className="block text-apple-gray-1 hover:text-white py-2 text-base"
-                >
-                  {link.label}
-                </a>
-              )
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="block text-apple-gray-1 hover:text-white py-2 text-base"
+              >
+                {link.label}
+              </a>
             ))}
+            <Link
+              to={portfolioLink.href}
+              onClick={() => setIsOpen(false)}
+              className="block text-apple-gray-1 hover:text-white py-2 text-base"
+            >
+              {portfolioLink.label}
+            </Link>
             <a
               href="tel:+34620211374"
               className="block bg-brand text-white text-center py-3 rounded-full text-sm font-medium"
