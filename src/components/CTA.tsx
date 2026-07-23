@@ -1,33 +1,31 @@
 export default function CTA() {
   return (
-    <section className="relative py-24 overflow-hidden">
-      <img
-        src="/img-cyber.jpg"
-        alt="Transforma tu empresa con IA"
-        className="absolute inset-0 w-full h-full object-cover"
-        loading="lazy"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-brand/90 via-brand/80 to-cyan-600/90" />
+    <section className="py-32 bg-black relative overflow-hidden">
+      <div className="absolute inset-0">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/10 rounded-full blur-[100px]" />
+      </div>
 
-      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-          ¿Listo para transformar tu empresa con IA?
+      <div className="relative max-w-4xl mx-auto px-6 text-center">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+          ¿Listo para empezar?
         </h2>
-        <p className="text-lg sm:text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-          Te ayudamos a automatizar procesos, mejorar tu web y aumentar tus resultados con Inteligencia Artificial aplicada a tu negocio.
+        <p className="text-xl text-apple-gray-1 mb-12 max-w-2xl mx-auto leading-relaxed">
+          Te ayudamos a automatizar procesos, mejorar tu web y aumentar tus resultados con Inteligencia Artificial.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#contacto"
-            className="bg-white text-brand font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-all hover:shadow-xl hover:-translate-y-0.5"
+            href="https://wa.me/34620211374?text=Hola,%20me%20interesa%20vuestros%20servicios%20de%20IA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-brand hover:bg-brand-dark text-white px-10 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-brand/25"
           >
-            Quiero empezar
+            Empezar ahora
           </a>
           <a
             href="#contacto"
-            className="border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-white/10 transition-all"
+            className="text-white/60 hover:text-white px-10 py-4 text-lg font-medium transition-colors duration-300 border border-white/10 rounded-full hover:border-white/20"
           >
-            Solicitar diagnostico IA
+            Saber mas
           </a>
         </div>
       </div>
