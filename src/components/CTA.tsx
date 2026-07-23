@@ -1,10 +1,13 @@
 export default function CTA() {
   return (
-    <section className="py-24 bg-gradient-to-r from-brand to-cyan-500 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl" />
-      </div>
+    <section className="relative py-24 overflow-hidden">
+      <img
+        src="/img-cyber.jpg"
+        alt="Transforma tu empresa con IA"
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="lazy"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-brand/90 via-brand/80 to-cyan-600/90" />
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">

@@ -2,8 +2,40 @@ export default function About() {
   return (
     <section className="py-24 bg-[#0f172a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="relative order-2 lg:order-1">
+            <div className="relative rounded-3xl overflow-hidden">
+              <img
+                src="/img-team.jpg"
+                alt="Equipo Logical Net"
+                className="w-full h-80 lg:h-[420px] object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-8">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
+                    <div className="text-2xl font-bold text-brand mb-1">20+</div>
+                    <div className="text-white/80 text-xs">Años de experiencia</div>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
+                    <div className="text-2xl font-bold text-brand mb-1">100+</div>
+                    <div className="text-white/80 text-xs">Proyectos realizados</div>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
+                    <div className="text-2xl font-bold text-brand mb-1">24/7</div>
+                    <div className="text-white/80 text-xs">Soporte tecnico</div>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
+                    <div className="text-2xl font-bold text-brand mb-1">100%</div>
+                    <div className="text-white/80 text-xs">Clientes satisfechos</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="order-1 lg:order-2">
             <span className="text-brand text-sm font-semibold uppercase tracking-wider">
               Sobre Nosotros
             </span>
@@ -19,29 +51,6 @@ export default function About() {
             <p className="text-gray-300 leading-relaxed">
               Fundada por <strong className="text-brand">Vicente Balseiro</strong>, un profesional con mas de 20 años de experiencia en el sector. Su vision es hacer accesibles las tecnologias avanzadas a las pequenas y medianas empresas, ayudandolas a prosperar.
             </p>
-          </div>
-
-          <div className="relative">
-            <div className="bg-gradient-to-br from-brand/20 to-accent/20 border border-brand/20 rounded-3xl p-8">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                  <div className="text-3xl font-bold text-brand mb-1">20+</div>
-                  <div className="text-gray-400 text-sm">Años de experiencia</div>
-                </div>
-                <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                  <div className="text-3xl font-bold text-brand mb-1">100+</div>
-                  <div className="text-gray-400 text-sm">Proyectos realizados</div>
-                </div>
-                <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                  <div className="text-3xl font-bold text-brand mb-1">24/7</div>
-                  <div className="text-gray-400 text-sm">Soporte tecnico</div>
-                </div>
-                <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                  <div className="text-3xl font-bold text-brand mb-1">100%</div>
-                  <div className="text-gray-400 text-sm">Clientes satisfechos</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
