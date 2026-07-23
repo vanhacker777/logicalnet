@@ -11,6 +11,8 @@ import SuccessCases from './components/SuccessCases';
 import Contact from './components/Contact';
 import SpecializedServices from './components/SpecializedServices';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
+import PhoneButton from './components/PhoneButton';
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
       <Contact />
       <SpecializedServices />
       <Footer />
+      <WhatsAppButton />
+      <PhoneButton />
     </div>
   );
 }
