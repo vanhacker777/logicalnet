@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -26,32 +28,19 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4 text-sm">Servicios</h3>
             <ul className="space-y-3">
-              <li><a href="#servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">IA & Automatizacion</a></li>
-              <li><a href="#proyectos" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Desarrollo Web</a></li>
-              <li><a href="#soporte" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Soporte IT</a></li>
-              <li><a href="#servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Marketing Digital</a></li>
+              <li><a href="/#servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">IA & Automatizacion</a></li>
+              <li><a href="/#proyectos" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Desarrollo Web</a></li>
+              <li><a href="/#soporte" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Soporte IT</a></li>
+              <li><a href="/#servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Marketing Digital</a></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm">Contacto</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm">Empresa</h3>
             <ul className="space-y-3">
-              <li>
-                <a href="tel:+34620211374" className="text-apple-gray-1 hover:text-white text-sm transition-colors flex items-center gap-2">
-                  <span className="text-brand">Tel:</span> 620 21 13 74
-                </a>
-              </li>
-              <li>
-                <a href="mailto:info@logicalnet.es" className="text-apple-gray-1 hover:text-white text-sm transition-colors flex items-center gap-2">
-                  <span className="text-brand">Email:</span> info@logicalnet.es
-                </a>
-              </li>
-              <li className="text-apple-gray-1 text-sm">
-                <span className="text-brand">Dir:</span> Av. de España 51, local 17
-              </li>
-              <li className="text-apple-gray-1 text-sm">
-                Logicalnet Group
-              </li>
+              <li><Link to="/portfolio" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Portfolio</Link></li>
+              <li><a href="/#about" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Sobre nosotros</a></li>
+              <li><a href="/#contacto" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Contacto</a></li>
             </ul>
           </div>
         </div>

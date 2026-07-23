@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +12,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: 'IA & Automatizacion', href: '#servicios' },
-    { label: 'Desarrollo Web', href: '#proyectos' },
-    { label: 'Soporte IT', href: '#soporte' },
-    { label: 'Proyectos', href: '#proyectos' },
+    { label: 'IA & Automatizacion', href: '/#servicios' },
+    { label: 'Desarrollo Web', href: '/#proyectos' },
+    { label: 'Soporte IT', href: '/#soporte' },
+    { label: 'Portfolio', href: '/portfolio' },
   ];
 
   return (
@@ -27,19 +28,29 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src="/logo.png" alt="Logical Net" className="h-10 w-auto" />
-          </a>
+          </Link>
 
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-apple-gray-1 hover:text-white transition-colors text-sm font-medium"
-              >
-                {link.label}
-              </a>
+              link.href.startsWith('/') && !link.href.startsWith('/#') ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-apple-gray-1 hover:text-white transition-colors text-sm font-medium"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-apple-gray-1 hover:text-white transition-colors text-sm font-medium"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
             <a
               href="https://wa.me/34620211374"
@@ -82,14 +93,25 @@ export default function Navbar() {
         <div className="lg:hidden bg-black/95 backdrop-blur-xl border-t border-white/5">
           <div className="px-6 py-6 space-y-4">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="block text-apple-gray-1 hover:text-white py-2 text-base"
-              >
-                {link.label}
-              </a>
+              link.href.startsWith('/') && !link.href.startsWith('/#') ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block text-apple-gray-1 hover:text-white py-2 text-base"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block text-apple-gray-1 hover:text-white py-2 text-base"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
             <a
               href="tel:+34620211374"

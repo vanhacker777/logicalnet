@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -13,11 +14,11 @@ import SpecializedServices from './components/SpecializedServices';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import PhoneButton from './components/PhoneButton';
+import Portfolio from './pages/Portfolio';
 
-export default function App() {
+function Home() {
   return (
-    <div className="min-h-screen bg-[#0f172a]">
-      <Navbar />
+    <>
       <Hero />
       <Services />
       <Process />
@@ -29,9 +30,23 @@ export default function App() {
       <SuccessCases />
       <Contact />
       <SpecializedServices />
-      <Footer />
-      <WhatsAppButton />
-      <PhoneButton />
-    </div>
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <div className="min-h-screen bg-black">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+        <Footer />
+        <WhatsAppButton />
+        <PhoneButton />
+      </div>
+    </BrowserRouter>
   );
 }

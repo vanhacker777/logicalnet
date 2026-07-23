@@ -1,32 +1,4 @@
-const projects = [
-  {
-    title: 'DYNAMIC-PARTNERS',
-    url: 'dynamic-partners.es',
-    description: 'Gestion integral de eventos y experiencias corporativas en España.',
-    gradient: 'from-blue-600/20 to-indigo-700/20',
-    border: 'border-blue-500/20',
-  },
-  {
-    title: 'EFFEKT SECURITY',
-    url: 'effektsecurity.com',
-    description: 'Seguridad Integral con mas de 20 años de experiencia.',
-    gradient: 'from-red-600/20 to-orange-600/20',
-    border: 'border-red-500/20',
-  },
-  {
-    title: 'SIN MOCHILA',
-    url: 'sinmochila.es',
-    description: 'Centro de psicologia acreditado en Las Rozas.',
-    gradient: 'from-green-600/20 to-teal-600/20',
-    border: 'border-green-500/20',
-  },
-  {
-    title: 'COMPUTERMANIA.ES',
-    url: 'computermania.es',
-    description: 'Servicio tecnico de ordenadores y recuperacion de datos.',
-    gradient: 'from-purple-600/20 to-violet-700/20',
-    border: 'border-purple-500/20',
-  },
+export const projects = [
   {
     title: 'ACP-SOLAR',
     url: 'acp-solar.com',
@@ -34,6 +6,39 @@ const projects = [
     gradient: 'from-amber-600/20 to-yellow-500/20',
     border: 'border-amber-500/20',
     highlight: true,
+    tags: ['App clientes', 'Area privada', 'Control de proyectos'],
+  },
+  {
+    title: 'DYNAMIC-PARTNERS',
+    url: 'dynamic-partners.es',
+    description: 'Gestion integral de eventos y experiencias corporativas en España.',
+    gradient: 'from-blue-600/20 to-indigo-700/20',
+    border: 'border-blue-500/20',
+    tags: ['Eventos', 'Corporate'],
+  },
+  {
+    title: 'EFFEKT SECURITY',
+    url: 'effektsecurity.com',
+    description: 'Seguridad Integral con mas de 20 años de experiencia.',
+    gradient: 'from-red-600/20 to-orange-600/20',
+    border: 'border-red-500/20',
+    tags: ['Seguridad', 'Integral'],
+  },
+  {
+    title: 'SIN MOCHILA',
+    url: 'sinmochila.es',
+    description: 'Centro de psicologia acreditado en Las Rozas.',
+    gradient: 'from-green-600/20 to-teal-600/20',
+    border: 'border-green-500/20',
+    tags: ['Salud', 'Psicologia'],
+  },
+  {
+    title: 'COMPUTERMANIA.ES',
+    url: 'computermania.es',
+    description: 'Servicio tecnico de ordenadores y recuperacion de datos.',
+    gradient: 'from-purple-600/20 to-violet-700/20',
+    border: 'border-purple-500/20',
+    tags: ['IT', 'Soporte'],
   },
 ];
 
@@ -80,7 +85,7 @@ export default function Projects() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 mb-20">
+        <div className="grid sm:grid-cols-2 gap-6 mb-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -103,9 +108,9 @@ export default function Projects() {
               <span className="text-apple-gray-1 text-sm">{project.url}</span>
               <h3 className="text-xl font-bold text-white mt-1 mb-2">{project.title}</h3>
               <p className="text-apple-gray-1 text-sm leading-relaxed">{project.description}</p>
-              {(project as any).highlight && (
+              {(project as any).tags && (
                 <div className="flex flex-wrap gap-2 mt-4">
-                  {['App clientes', 'Area privada', 'Control de proyectos'].map((tag) => (
+                  {(project as any).tags.map((tag: string) => (
                     <span key={tag} className="text-xs bg-white/5 border border-white/10 text-white/60 px-2.5 py-1 rounded-full">
                       {tag}
                     </span>
@@ -114,6 +119,18 @@ export default function Projects() {
               )}
             </div>
           ))}
+        </div>
+
+        <div className="text-center mb-16">
+          <a
+            href="/portfolio"
+            className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300"
+          >
+            Ver portfolio completo
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
         </div>
 
         <div className="text-center mb-12">
