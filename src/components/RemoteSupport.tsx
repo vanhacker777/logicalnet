@@ -7,6 +7,13 @@ const advantages = [
   'Servicio eficaz y rapido.',
 ];
 
+const specialities = [
+  { label: 'NAS / Synology', icon: 'HDD' },
+  { label: 'Servidores fisicos', icon: 'SVR' },
+  { label: 'Servidores en la nube', icon: 'CLD' },
+  { label: 'Infraestructura IT', icon: 'NET' },
+];
+
 export default function RemoteSupport() {
   return (
     <section id="soporte" className="py-32 bg-black">
@@ -24,29 +31,43 @@ export default function RemoteSupport() {
             </div>
 
             <div className="p-8 sm:p-12">
-              <span className="text-brand text-sm font-medium tracking-widest uppercase">
-                Soporte IT
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mt-3 mb-6 tracking-tight">
-                Tecnico Remoto
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-brand text-sm font-medium tracking-widest uppercase">
+                  Soporte IT
+                </span>
+                <span className="text-[10px] bg-white/10 border border-white/10 text-white/60 px-2 py-0.5 rounded-full uppercase tracking-wider">
+                  EN / ES
+                </span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4 tracking-tight">
+                IT Support
               </h2>
-              <p className="text-apple-gray-1 leading-relaxed mb-8 text-lg">
-                Soluciones rapidas y seguras sin desplazamientos. Nuestros expertos resuelven tus problemas al instante a traves de Internet.
+              <p className="text-apple-gray-1 leading-relaxed mb-6 text-lg">
+                Departamento de soporte tecnico con amplia experiencia en ingles y español. Mejoramos tus sistemas, desde NAS y Synology hasta servidores fisicos y soluciones en la nube.
               </p>
 
-              <div className="grid sm:grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-2 gap-3 mb-8">
+                {specialities.map((spec, index) => (
+                  <div key={index} className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 flex items-center gap-3">
+                    <span className="text-brand text-[10px] font-bold bg-brand/10 px-2 py-0.5 rounded">{spec.icon}</span>
+                    <span className="text-apple-gray-1 text-sm">{spec.label}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-3 mb-8">
                 {advantages.map((advantage, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <svg className="w-4 h-4 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <div key={index} className="flex items-center gap-2">
+                    <svg className="w-3.5 h-3.5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-apple-gray-1 text-sm">{advantage}</span>
+                    <span className="text-apple-gray-1 text-xs">{advantage}</span>
                   </div>
                 ))}
               </div>
 
               <div className="flex items-center gap-3 mb-8">
-                <div className="text-brand text-2xl">🕘</div>
+                <div className="text-brand text-2xl">&#128336;</div>
                 <div>
                   <p className="text-white font-semibold text-sm">Horario de atencion</p>
                   <p className="text-apple-gray-1 text-sm">Lunes a viernes de 9:00 a 14:00 y de 16:00 a 19:00</p>
