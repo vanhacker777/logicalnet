@@ -21,9 +21,15 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-apple-gray-1 max-w-md mb-8 leading-relaxed font-light opacity-0 animate-fade-up delay-200">
+            <p className="text-base sm:text-lg text-apple-gray-1 max-w-md mb-6 leading-relaxed font-light opacity-0 animate-fade-up delay-200">
               Digitalizamos, automatizamos y hacemos crecer tu negocio con soluciones inteligentes.
             </p>
+
+            <div className="flex flex-wrap gap-2 mb-8 opacity-0 animate-fade-up delay-200">
+              <span className="text-[11px] bg-white/5 border border-white/10 text-white/50 px-3 py-1 rounded-full">IA & Automatizacion</span>
+              <span className="text-[11px] bg-white/5 border border-white/10 text-white/50 px-3 py-1 rounded-full">Soporte & Mantenimiento IT</span>
+              <span className="text-[11px] bg-white/5 border border-white/10 text-white/50 px-3 py-1 rounded-full">Desarrollo Web</span>
+            </div>
 
             <div className="flex flex-wrap items-center gap-3 mb-10 opacity-0 animate-fade-up delay-300">
               <a
