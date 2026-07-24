@@ -2,14 +2,15 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/3 right-0 w-[600px] h-[600px] bg-brand/5 rounded-full blur-[150px]" />
+        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-brand/8 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[100px]" />
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 py-32 w-full">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           <div>
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-6 opacity-0 animate-fade-up">
-              <span className="w-1.5 h-1.5 bg-brand rounded-full" />
+              <span className="w-1.5 h-1.5 bg-brand rounded-full animate-pulse" />
               <span className="text-white/60 text-xs tracking-widest uppercase">Logical Net</span>
             </div>
 
@@ -24,7 +25,7 @@ export default function Hero() {
               Digitalizamos, automatizamos y hacemos crecer tu negocio con soluciones inteligentes.
             </p>
 
-            <div className="flex flex-wrap items-center gap-3 opacity-0 animate-fade-up delay-300">
+            <div className="flex flex-wrap items-center gap-3 mb-10 opacity-0 animate-fade-up delay-300">
               <a
                 href="https://wa.me/34620211374?text=Hola,%20me%20interesa%20vuestros%20servicios%20de%20IA"
                 target="_blank"
@@ -52,9 +53,27 @@ export default function Hero() {
                 Ver mas
               </a>
             </div>
+
+            <div className="flex items-center gap-6 opacity-0 animate-fade-up delay-500">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-white">20+</span>
+                <span className="text-xs text-apple-gray-1 leading-tight">años de<br/>experiencia</span>
+              </div>
+              <div className="w-px h-8 bg-white/10" />
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-white">100+</span>
+                <span className="text-xs text-apple-gray-1 leading-tight">clientes<br/>activos</span>
+              </div>
+              <div className="w-px h-8 bg-white/10" />
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-white">24/7</span>
+                <span className="text-xs text-apple-gray-1 leading-tight">soporte<br/>tecnico</span>
+              </div>
+            </div>
           </div>
 
           <div className="relative opacity-0 animate-fade-up delay-300">
+            <div className="absolute -inset-8 bg-gradient-to-br from-brand/15 via-blue-500/10 to-cyan-500/10 rounded-[2rem] blur-3xl animate-pulse" />
             <div className="absolute -inset-4 bg-gradient-to-br from-brand/10 via-transparent to-blue-500/10 rounded-3xl blur-2xl" />
             <img
               src="/hero-ai.jpg"
@@ -62,11 +81,41 @@ export default function Hero() {
               className="relative w-full h-[320px] sm:h-[400px] object-cover rounded-2xl border border-white/5"
               loading="eager"
             />
+            <div className="absolute -bottom-4 -right-4 bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl px-4 py-3 flex items-center gap-3">
+              <div className="w-8 h-8 rounded-lg bg-brand/20 flex items-center justify-center">
+                <svg className="w-4 h-4 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <p className="text-white text-xs font-medium">Automatizacion</p>
+                <p className="text-apple-gray-1 text-[10px]">Activa ahora</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-20 flex flex-col items-center opacity-0 animate-fade-up delay-500">
+          <p className="text-apple-gray-2 text-xs tracking-widest uppercase mb-4">Tecnologias</p>
+          <div className="flex items-center gap-8 text-white/20">
+            <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm-2 17.5v-9l7 4.5-7 4.5z"/></svg>
+            <span className="text-sm font-medium">React</span>
+            <span className="text-white/10">|</span>
+            <span className="text-sm font-medium">Node.js</span>
+            <span className="text-white/10">|</span>
+            <span className="text-sm font-medium">Python</span>
+            <span className="text-white/10">|</span>
+            <span className="text-sm font-medium">AWS</span>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent" />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0 animate-fade-up delay-500">
+        <span className="text-apple-gray-2 text-[10px] tracking-widest uppercase">Scroll</span>
+        <div className="w-5 h-8 border border-white/20 rounded-full flex justify-center pt-1.5">
+          <div className="w-1 h-2 bg-white/40 rounded-full animate-bounce" />
+        </div>
+      </div>
     </section>
   );
 }
