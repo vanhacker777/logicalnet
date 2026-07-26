@@ -3,18 +3,18 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 const steps = [
   {
     number: '01',
-    title: 'Diagnostico',
+    title: 'Diagnóstico',
     description: 'Analizamos tu empresa y detectamos donde la IA puede ahorrarte tiempo y dinero.',
   },
   {
     number: '02',
     title: 'Propuesta',
-    description: 'Disenamos la solucion: automatizaciones, web, app o asistente IA.',
+    description: 'Diseñamos la solución: automatizaciones, web, app o asistente IA.',
   },
   {
     number: '03',
-    title: 'Implementacion',
-    description: 'Desarrollamos y configuramos todo con el minimo impacto.',
+    title: 'Implementación',
+    description: 'Desarrollamos y configuramos todo con el mínimo impacto.',
   },
   {
     number: '04',
@@ -51,7 +51,7 @@ export default function Process() {
             Proceso
           </span>
           <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tight`}>
-            Como funciona
+            Cómo funciona
           </h2>
         </div>
 

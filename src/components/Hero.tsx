@@ -23,7 +23,7 @@ export default function Hero() {
             <h1 className={`scroll-hidden scroll-hidden-delay-1 ${isVisible ? 'scroll-visible' : ''} text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-[1.15] mb-5`}>
               <span className="text-white">Tu empresa merece </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-brand to-cyan-400">
-                mas
+                más
               </span>
             </h1>
 
@@ -36,7 +36,7 @@ export default function Hero() {
                 href="#contacto"
                 className="bg-brand hover:bg-brand-dark text-white px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-brand/25 flex items-center gap-2"
               >
-                Diagnostico gratuito
+                Diagnóstico gratuito
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -72,7 +72,7 @@ export default function Hero() {
                 </svg>
               </div>
               <div>
-                <p className="text-white text-xs font-medium">Automatizacion</p>
+                <p className="text-white text-xs font-medium">Automatización</p>
                 <p className="text-apple-gray-1 text-[10px]">Activa ahora</p>
               </div>
             </div>

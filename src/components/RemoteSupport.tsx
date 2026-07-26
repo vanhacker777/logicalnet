@@ -2,14 +2,14 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const advantages = [
   'Sin desplazamientos.',
-  'Formacion personalizada.',
+  'Formación personalizada.',
   'Transparencia total.',
   'Sin gastos ocultos.',
 ];
 
 const specialities = [
   { label: 'NAS / Synology', icon: 'HDD' },
-  { label: 'Servidores fisicos', icon: 'SVR' },
+  { label: 'Servidores físicos', icon: 'SVR' },
   { label: 'Servidores en la nube', icon: 'CLD' },
   { label: 'Infraestructura IT', icon: 'NET' },
 ];
@@ -26,7 +26,7 @@ export default function RemoteSupport() {
             <div ref={imageRef} className={`scroll-left ${imageVisible ? 'scroll-visible' : ''} relative`}>
               <img
                 src="/img-team-collab.jpg"
-                alt="Soporte tecnico remoto"
+                alt="Soporte técnico remoto"
                 className="w-full h-64 lg:h-full object-cover"
                 loading="lazy"
               />

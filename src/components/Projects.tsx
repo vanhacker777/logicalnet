@@ -4,16 +4,16 @@ export const projects = [
   {
     title: 'ACP-SOLAR',
     url: 'acp-solar.com',
-    description: 'Web con app de control de clientes y area privada para gestion de energia solar.',
+    description: 'Web con app de control de clientes y área privada para gestión de energía solar.',
     gradient: 'from-amber-600/20 to-yellow-500/20',
     border: 'border-amber-500/20',
     highlight: true,
-    tags: ['App clientes', 'Area privada', 'Control de proyectos'],
+    tags: ['App clientes', 'Área privada', 'Control de proyectos'],
   },
   {
     title: 'DYNAMIC-PARTNERS',
     url: 'dynamic-partners.es',
-    description: 'Gestion integral de eventos y experiencias corporativas.',
+    description: 'Gestión integral de eventos y experiencias corporativas.',
     gradient: 'from-blue-600/20 to-indigo-700/20',
     border: 'border-blue-500/20',
     tags: ['Eventos', 'Corporate'],
@@ -21,7 +21,7 @@ export const projects = [
   {
     title: 'EFFEKT SECURITY',
     url: 'effektsecurity.com',
-    description: 'Seguridad integral con mas de 20 años de experiencia.',
+    description: 'Seguridad integral con más de 20 años de experiencia.',
     gradient: 'from-red-600/20 to-orange-600/20',
     border: 'border-red-500/20',
     tags: ['Seguridad', 'Integral'],
@@ -29,15 +29,15 @@ export const projects = [
   {
     title: 'SIN MOCHILA',
     url: 'sinmochila.es',
-    description: 'Centro de psicologia acreditado en Las Rozas.',
+    description: 'Centro de psicología acreditado en Las Rozas.',
     gradient: 'from-green-600/20 to-teal-600/20',
     border: 'border-green-500/20',
-    tags: ['Salud', 'Psicologia'],
+    tags: ['Salud', 'Psicología'],
   },
   {
     title: 'COMPUTERMANIA.ES',
     url: 'computermania.es',
-    description: 'Servicio tecnico de ordenadores y recuperacion de datos.',
+    description: 'Servicio técnico de ordenadores y recuperación de datos.',
     gradient: 'from-purple-600/20 to-violet-700/20',
     border: 'border-purple-500/20',
     tags: ['IT', 'Soporte'],
@@ -56,7 +56,7 @@ export default function Projects() {
             Portfolio
           </span>
           <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tight`}>
-            Que creamos
+            Qué creamos
           </h2>
         </div>
 

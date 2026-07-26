@@ -65,14 +65,14 @@ export default function Contact() {
 
           <div className="grid sm:grid-cols-2 gap-6">
             <div>
-              <label className="block text-apple-gray-1 text-sm mb-2">Telefono</label>
+              <label className="block text-apple-gray-1 text-sm mb-2">Teléfono</label>
               <input
                 type="tel"
                 name="telefono"
                 value={formData.telefono}
                 onChange={handleChange}
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-apple-gray-2 focus:outline-none focus:border-brand/50 focus:ring-1 focus:ring-brand/50 transition-all text-sm"
-                placeholder="Tu telefono"
+                placeholder="Tu teléfono"
               />
             </div>
             <div>
@@ -85,7 +85,7 @@ export default function Contact() {
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand/50 focus:ring-1 focus:ring-brand/50 transition-all text-sm"
               >
                 <option value="" className="bg-black">Selecciona</option>
-                <option value="ia" className="bg-black">IA & Automatizacion</option>
+                <option value="ia" className="bg-black">IA & Automatización</option>
                 <option value="web" className="bg-black">Desarrollo Web</option>
                 <option value="soporte" className="bg-black">Soporte IT</option>
                 <option value="otro" className="bg-black">Otro</option>

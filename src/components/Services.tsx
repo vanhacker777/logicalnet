@@ -19,7 +19,7 @@ const services = [
     ),
     image: '/img-automation.jpg',
     title: 'Bots inteligentes',
-    description: 'Asistentes personalizados que responden a clientes y automatizan atencion 24/7.',
+    description: 'Asistentes personalizados que responden a clientes y automatizan atención 24/7.',
   },
   {
     icon: (
@@ -29,7 +29,7 @@ const services = [
     ),
     image: '/img-dashboard.jpg',
     title: 'Web y marketing',
-    description: 'Mejoramos tu web, SEO y campanas digitales con analisis predictivo.',
+    description: 'Mejoramos tu web, SEO y campañas digitales con análisis predictivo.',
   },
 ];
 

@@ -12,7 +12,7 @@ export default function Footer() {
               <img src="/logo.png" alt="Logical Net" className="h-10 w-auto" />
             </div>
             <p className="text-apple-gray-1 leading-relaxed mb-6 max-w-sm text-sm">
-              Empresa de IT dedicada a PYMEs. Soluciones innovadoras de Inteligencia Artificial, automatizacion, desarrollo web y soporte tecnico.
+              Empresa de IT dedicada a PYMEs. Soluciones innovadoras de Inteligencia Artificial, automatización, desarrollo web y soporte técnico.
             </p>
             <div className="flex gap-3">
               {['facebook', 'instagram', 'x', 'linkedin'].map((social) => (
@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4 text-sm">Servicios</h3>
             <ul className="space-y-3">
-              <li><a href="/#servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">IA & Automatizacion</a></li>
+              <li><a href="/#servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">IA & Automatización</a></li>
               <li><a href="/#proyectos" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Desarrollo Web</a></li>
               <li><a href="/#soporte" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Soporte IT</a></li>
               <li><a href="/#servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Marketing Digital</a></li>

@@ -12,7 +12,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: 'IA & Automatizacion', href: '/#servicios' },
+    { label: 'IA & Automatización', href: '/#servicios' },
     { label: 'Desarrollo Web', href: '/#proyectos' },
     { label: 'Soporte IT', href: '/#soporte' },
   ];

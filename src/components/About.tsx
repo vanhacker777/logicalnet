@@ -19,10 +19,10 @@ export default function About() {
               Empresa dedicada a ofrecer <strong className="text-white font-semibold">soluciones de IT a PYMEs</strong>. Optimizamos procesos y mejoramos la experiencia del usuario.
             </p>
             <p className={`scroll-hidden scroll-hidden-delay-3 ${textVisible ? 'scroll-visible' : ''} text-lg text-apple-gray-1 leading-relaxed mb-6`}>
-              Nuestro equipo esta formado por expertos apasionados por la tecnologia. Trabajamos de la mano con nuestros clientes.
+              Nuestro equipo está formado por expertos apasionados por la tecnología. Trabajamos de la mano con nuestros clientes.
             </p>
             <p className={`scroll-hidden scroll-hidden-delay-3 ${textVisible ? 'scroll-visible' : ''} text-lg text-apple-gray-1 leading-relaxed`}>
-              Fundada por <strong className="text-brand">Vicente Balseiro</strong>, con mas de 20 años de experiencia.
+              Fundada por <strong className="text-brand">Vicente Balseiro</strong>, con más de 20 años de experiencia.
             </p>
           </div>
 

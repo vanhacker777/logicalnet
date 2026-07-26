@@ -2,21 +2,21 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const cases = [
   {
-    title: 'Atencion al Cliente',
+    title: 'Atención al Cliente',
     description: 'Asistente IA que responde dudas, gestiona citas y reduce un 70% el tiempo manual.',
     result: '+70%',
     resultLabel: 'eficiencia',
     image: '/img-ai-brain.jpg',
   },
   {
-    title: 'Captacion de Leads',
-    description: 'Bot que capta, califica clientes y envia propuestas automaticas.',
+    title: 'Captación de Leads',
+    description: 'Bot que capta, califica clientes y envía propuestas automáticas.',
     result: '+40%',
     resultLabel: 'conversiones',
     image: '/img-cybersecurity.jpg',
   },
   {
-    title: 'Optimizacion Web',
+    title: 'Optimización Web',
     description: 'IA que analiza, corrige errores y genera contenido optimizado.',
     result: '+55%',
     resultLabel: 'trafico',
@@ -63,7 +63,7 @@ export default function AICases() {
             Resultados
           </span>
           <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tight`}>
-            Que hablan
+            Qué hablan
           </h2>
         </div>
 

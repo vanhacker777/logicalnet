@@ -3,14 +3,14 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 const successCases = [
   {
     company: 'TechSolutions',
-    description: 'Sistema de gestion que redujo el tiempo de entrega en un 30%.',
+    description: 'Sistema de gestión que redujo el tiempo de entrega en un 30%.',
     metric: '-30%',
     metricLabel: 'tiempo de entrega',
     image: '/img-ai-brain.jpg',
   },
   {
     company: 'FinTech Innovators',
-    description: 'App personalizada que aumento usuarios en un 50% en seis meses.',
+    description: 'App personalizada que aumentó usuarios en un 50% en seis meses.',
     metric: '+50%',
     metricLabel: 'usuarios',
     image: '/img-cybersecurity.jpg',
@@ -53,10 +53,10 @@ export default function SuccessCases() {
       <div className="max-w-6xl mx-auto px-6">
         <div ref={titleRef} className="text-center mb-20">
           <span className={`scroll-hidden ${titleVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
-            Casos de Exito
+            Casos de Éxito
           </span>
           <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tight`}>
-            Que inspiran
+            Qué inspiran
           </h2>
         </div>
 
