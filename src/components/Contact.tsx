@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -8,6 +9,9 @@ export default function Contact() {
     asunto: '',
     mensaje: '',
   });
+
+  const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation(0.2);
+  const { ref: formRef, isVisible: formVisible } = useScrollAnimation<HTMLFormElement>(0.1);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,16 +26,16 @@ export default function Contact() {
   return (
     <section id="contacto" className="py-32 bg-black">
       <div className="max-w-3xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="text-brand text-sm font-medium tracking-widest uppercase">
+        <div ref={titleRef} className="text-center mb-16">
+          <span className={`scroll-hidden ${titleVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
             Contacto
           </span>
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mt-4 tracking-tight">
+          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl font-bold text-white mt-4 tracking-tight`}>
             Hablemos
           </h2>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form ref={formRef} onSubmit={handleSubmit} className={`scroll-hidden ${formVisible ? 'scroll-visible' : ''} space-y-6`}>
           <div className="grid sm:grid-cols-2 gap-6">
             <div>
               <label className="block text-apple-gray-1 text-sm mb-2">Nombre</label>
@@ -105,7 +109,7 @@ export default function Contact() {
             type="submit"
             className="w-full bg-brand hover:bg-brand-dark text-white font-medium py-4 rounded-full text-base transition-all duration-300 hover:shadow-lg hover:shadow-brand/25"
           >
-            Enviar mensaje
+            Enviar
           </button>
         </form>
       </div>

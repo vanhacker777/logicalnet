@@ -1,3 +1,5 @@
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
+
 const services = [
   {
     icon: (
@@ -6,8 +8,8 @@ const services = [
       </svg>
     ),
     image: '/img-coding.jpg',
-    title: 'Automatizacion de Procesos con IA',
-    description: 'Eliminamos tareas repetitivas y optimizamos tus flujos de trabajo con sistemas inteligentes que ahorran tiempo y reducen costes.',
+    title: 'Automatizacion con IA',
+    description: 'Eliminamos tareas repetitivas y optimizamos tus flujos de trabajo con sistemas inteligentes.',
   },
   {
     icon: (
@@ -16,8 +18,8 @@ const services = [
       </svg>
     ),
     image: '/img-automation.jpg',
-    title: 'Asistentes y Bots Inteligentes',
-    description: 'Creamos asistentes personalizados que responden a clientes, gestionan informacion y automatizan atencion 24/7.',
+    title: 'Bots inteligentes',
+    description: 'Asistentes personalizados que responden a clientes y automatizan atencion 24/7.',
   },
   {
     icon: (
@@ -26,66 +28,64 @@ const services = [
       </svg>
     ),
     image: '/img-dashboard.jpg',
-    title: 'Optimizacion Web y Marketing con IA',
-    description: 'Mejoramos tu web, SEO y campanas digitales con analisis predictivo y contenido generado por IA.',
+    title: 'Web y marketing',
+    description: 'Mejoramos tu web, SEO y campanas digitales con analisis predictivo.',
   },
 ];
 
+function ServiceItem({ service, index }: { service: typeof services[0]; index: number }) {
+  const { ref, isVisible } = useScrollAnimation(0.2);
+  const isReversed = index % 2 !== 0;
+
+  return (
+    <div
+      ref={ref}
+      className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-16 items-center`}
+    >
+      <div className={`flex-1 ${isReversed ? 'scroll-right' : 'scroll-left'} ${isVisible ? 'scroll-visible' : ''}`}>
+        <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-brand mb-6">
+          {service.icon}
+        </div>
+        <h3 className="text-3xl sm:text-4xl font-bold text-white mb-4 tracking-tight">
+          {service.title}
+        </h3>
+        <p className="text-lg text-apple-gray-1 leading-relaxed max-w-lg">
+          {service.description}
+        </p>
+      </div>
+      <div className={`flex-1 w-full scroll-scale ${isVisible ? 'scroll-visible' : ''}`}>
+        <div className="relative rounded-3xl overflow-hidden group">
+          <img
+            src={service.image}
+            alt={service.title}
+            className="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Services() {
+  const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation(0.2);
+
   return (
     <section id="servicios" className="py-32 bg-black">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-20">
-          <span className="text-brand text-sm font-medium tracking-widest uppercase">
+        <div ref={titleRef} className="text-center mb-20">
+          <span className={`scroll-hidden ${titleVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
             Servicios
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 mb-6 tracking-tight">
-            Inteligencia Artificial
-            <br />
-            <span className="text-apple-gray-1">para tu empresa</span>
+          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 mb-6 tracking-tight`}>
+            Que hacemos
           </h2>
         </div>
 
         <div className="space-y-32">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className={`flex flex-col ${
-                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              } gap-16 items-center`}
-            >
-              <div className="flex-1">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-brand mb-6">
-                  {service.icon}
-                </div>
-                <h3 className="text-3xl sm:text-4xl font-bold text-white mb-4 tracking-tight">
-                  {service.title}
-                </h3>
-                <p className="text-lg text-apple-gray-1 leading-relaxed max-w-lg">
-                  {service.description}
-                </p>
-                <a
-                  href="#contacto"
-                  className="inline-flex items-center gap-2 text-brand hover:text-blue-400 text-base font-medium mt-6 transition-colors duration-300"
-                >
-                  Saber mas
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-              </div>
-              <div className="flex-1 w-full">
-                <div className="relative rounded-3xl overflow-hidden group">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                </div>
-              </div>
-            </div>
+            <ServiceItem key={index} service={service} index={index} />
           ))}
         </div>
       </div>

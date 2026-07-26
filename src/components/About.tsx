@@ -1,27 +1,32 @@
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
+
 export default function About() {
+  const { ref: textRef, isVisible: textVisible } = useScrollAnimation(0.2);
+  const { ref: imageRef, isVisible: imageVisible } = useScrollAnimation(0.2);
+
   return (
     <section className="py-32 bg-black">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
-          <div>
-            <span className="text-brand text-sm font-medium tracking-widest uppercase">
+          <div ref={textRef}>
+            <span className={`scroll-hidden ${textVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
               Sobre Nosotros
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mt-4 mb-8 tracking-tight">
+            <h2 className={`scroll-hidden scroll-hidden-delay-1 ${textVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl font-bold text-white mt-4 mb-8 tracking-tight`}>
               Logical Net
             </h2>
-            <p className="text-xl text-apple-gray-1 leading-relaxed mb-6">
-              Empresa dedicada a ofrecer soluciones <strong className="text-white font-semibold">de IT a PYMEs</strong>. Soluciones innovadoras que optimizan procesos y mejoran la experiencia del usuario.
+            <p className={`scroll-hidden scroll-hidden-delay-2 ${textVisible ? 'scroll-visible' : ''} text-xl text-apple-gray-1 leading-relaxed mb-6`}>
+              Empresa dedicada a ofrecer <strong className="text-white font-semibold">soluciones de IT a PYMEs</strong>. Optimizamos procesos y mejoramos la experiencia del usuario.
             </p>
-            <p className="text-lg text-apple-gray-1 leading-relaxed mb-6">
-              Nuestro equipo esta formado por expertos apasionados por la tecnologia. Trabajamos de la mano con nuestros clientes para alcanzar sus objetivos.
+            <p className={`scroll-hidden scroll-hidden-delay-3 ${textVisible ? 'scroll-visible' : ''} text-lg text-apple-gray-1 leading-relaxed mb-6`}>
+              Nuestro equipo esta formado por expertos apasionados por la tecnologia. Trabajamos de la mano con nuestros clientes.
             </p>
-            <p className="text-lg text-apple-gray-1 leading-relaxed">
-              Fundada por <strong className="text-brand">Vicente Balseiro</strong>, un profesional con mas de 20 años de experiencia en el sector.
+            <p className={`scroll-hidden scroll-hidden-delay-3 ${textVisible ? 'scroll-visible' : ''} text-lg text-apple-gray-1 leading-relaxed`}>
+              Fundada por <strong className="text-brand">Vicente Balseiro</strong>, con mas de 20 años de experiencia.
             </p>
           </div>
 
-          <div className="relative">
+          <div ref={imageRef} className={`scroll-scale ${imageVisible ? 'scroll-visible' : ''} relative`}>
             <div className="relative rounded-3xl overflow-hidden">
               <img
                 src="/img-office.jpg"
