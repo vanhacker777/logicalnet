@@ -38,14 +38,14 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-white/70 hover:text-white transition-colors text-sm font-medium"
+                className="text-white hover:text-brand transition-colors text-sm font-medium"
               >
                 {link.label}
               </a>
             ))}
             <Link
               to={portfolioLink.href}
-              className="text-white/70 hover:text-white transition-colors text-sm font-medium"
+              className="text-white hover:text-brand transition-colors text-sm font-medium"
             >
               {portfolioLink.label}
             </Link>
