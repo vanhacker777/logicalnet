@@ -33,19 +33,19 @@ export default function Navbar() {
             <img src="/logo.png" alt="Logical Net" className="h-10 w-auto" />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-apple-gray-1 hover:text-white transition-colors text-sm font-medium"
+                className="text-white/70 hover:text-white transition-colors text-sm font-medium"
               >
                 {link.label}
               </a>
             ))}
             <Link
               to={portfolioLink.href}
-              className="text-apple-gray-1 hover:text-white transition-colors text-sm font-medium"
+              className="text-white/70 hover:text-white transition-colors text-sm font-medium"
             >
               {portfolioLink.label}
             </Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
             </a>
           </div>
 
-          <div className="flex lg:hidden items-center gap-3">
+          <div className="flex md:hidden items-center gap-3">
             <a
               href="https://wa.me/34620211374"
               target="_blank"
@@ -87,7 +87,7 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden bg-[#0a1628]/95 backdrop-blur-xl border-t border-white/5">
+        <div className="md:hidden bg-[#0a1628]/95 backdrop-blur-xl border-t border-white/5">
           <div className="px-6 py-6 space-y-4">
             {navLinks.map((link) => (
               <a
