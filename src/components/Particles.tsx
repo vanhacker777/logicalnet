@@ -21,8 +21,8 @@ export default function Particles() {
 
     let animationId: number;
     let particles: Particle[] = [];
-    const particleCount = 50;
-    const connectionDistance = 150;
+    const particleCount = 60;
+    const connectionDistance = 180;
 
     const resize = () => {
       canvas.width = window.innerWidth;
@@ -37,8 +37,8 @@ export default function Particles() {
           y: Math.random() * canvas.height,
           vx: (Math.random() - 0.5) * 0.5,
           vy: (Math.random() - 0.5) * 0.5,
-          size: Math.random() * 2 + 1,
-          opacity: Math.random() * 0.5 + 0.1,
+          size: Math.random() * 2.5 + 1.5,
+          opacity: Math.random() * 0.6 + 0.2,
         });
       }
     };
@@ -67,8 +67,8 @@ export default function Particles() {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(41, 151, 255, ${0.1 * (1 - distance / connectionDistance)})`;
-            ctx.lineWidth = 0.5;
+            ctx.strokeStyle = `rgba(41, 151, 255, ${0.2 * (1 - distance / connectionDistance)})`;
+            ctx.lineWidth = 0.8;
             ctx.stroke();
           }
         }
@@ -95,8 +95,8 @@ export default function Particles() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 pointer-events-none"
-      style={{ opacity: 0.6 }}
+      className="absolute inset-0 pointer-events-none z-10"
+      style={{ opacity: 1 }}
     />
   );
 }

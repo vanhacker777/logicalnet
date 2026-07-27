@@ -6,7 +6,6 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" style={{background: 'linear-gradient(180deg, #0a1628 0%, #0d1a30 50%, #081020 100%)'}}>
-      <Particles />
       <div className="absolute inset-0">
         <img
           src="/img-tech.jpg"
@@ -15,6 +14,7 @@ export default function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628]/80 via-[#0d1a30]/60 to-[#081020]" />
       </div>
+      <Particles />
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-brand/10 rounded-full blur-[120px] animate-pulse" />
         <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-blue-600/8 rounded-full blur-[100px]" />
