@@ -8,16 +8,19 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden" style={{background: 'linear-gradient(180deg, #0a1628 0%, #0d1a30 50%, #081020 100%)'}}>
       <div className="absolute inset-0">
         <img
-          src="/img-tech.jpg"
+          src="/hero-ai.jpg"
           alt=""
-          className="w-full h-full object-cover opacity-10"
+          className="w-full h-full object-cover opacity-20 scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628]/80 via-[#0d1a30]/60 to-[#081020]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0a1628]/90 via-[#0d1a30]/70 to-[#081020]/90" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#081020] via-transparent to-[#0a1628]/50" />
+        <div className="absolute inset-0 bg-brand/5" />
       </div>
       <Particles />
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-brand/10 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-blue-600/8 rounded-full blur-[100px]" />
+        <div className="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-brand/12 rounded-full blur-[150px] animate-pulse" />
+        <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-cyan-500/5 rounded-full blur-[180px]" />
       </div>
 
       <div ref={heroRef} className="relative max-w-6xl mx-auto px-6 py-24 w-full">
