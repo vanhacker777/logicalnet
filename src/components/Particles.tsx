@@ -95,7 +95,7 @@ export default function Particles() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 pointer-events-none z-10"
+      className="absolute inset-0 pointer-events-none z-0"
       style={{ opacity: 1 }}
     />
   );
