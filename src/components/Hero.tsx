@@ -5,6 +5,14 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src="/img-tech.jpg"
+          alt=""
+          className="w-full h-full object-cover opacity-15"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
+      </div>
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-brand/8 rounded-full blur-[120px] animate-pulse" />
         <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[100px]" />
