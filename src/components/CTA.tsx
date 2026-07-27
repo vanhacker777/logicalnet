@@ -4,7 +4,7 @@ export default function CTA() {
   const { ref, isVisible } = useScrollAnimation(0.2);
 
   return (
-    <section className="py-32 bg-black relative overflow-hidden">
+    <section className="py-32 relative overflow-hidden" style={{background: 'linear-gradient(180deg, #0e1c35 0%, #12243f 50%, #101e38 100%)'}}>
       <div className="absolute inset-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/10 rounded-full blur-[100px]" />
       </div>

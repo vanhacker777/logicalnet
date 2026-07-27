@@ -5,7 +5,7 @@ export default function About() {
   const { ref: imageRef, isVisible: imageVisible } = useScrollAnimation(0.2);
 
   return (
-    <section className="py-32 bg-black">
+    <section className="py-32 relative" style={{background: 'linear-gradient(180deg, #0c1830 0%, #101e38 50%, #0e1c35 100%)'}}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div ref={textRef}>

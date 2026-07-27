@@ -19,7 +19,7 @@ export default function RemoteSupport() {
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation(0.2);
 
   return (
-    <section id="soporte" className="py-32 bg-black">
+    <section id="soporte" className="py-32 relative" style={{background: 'linear-gradient(180deg, #0a1428 0%, #0e1c35 50%, #0c1830 100%)'}}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="glass-card rounded-3xl overflow-hidden">
           <div className="grid lg:grid-cols-2 gap-0">

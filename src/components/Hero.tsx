@@ -4,18 +4,18 @@ export default function Hero() {
   const { ref: heroRef, isVisible } = useScrollAnimation(0.1);
 
   return (
-    <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden" style={{background: 'linear-gradient(180deg, #0a1628 0%, #0d1a30 50%, #081020 100%)'}}>
       <div className="absolute inset-0">
         <img
           src="/img-tech.jpg"
           alt=""
-          className="w-full h-full object-cover opacity-15"
+          className="w-full h-full object-cover opacity-10"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628]/80 via-[#0d1a30]/60 to-[#081020]" />
       </div>
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-brand/8 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[100px]" />
+        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-brand/10 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-blue-600/8 rounded-full blur-[100px]" />
       </div>
 
       <div ref={heroRef} className="relative max-w-6xl mx-auto px-6 py-24 w-full">

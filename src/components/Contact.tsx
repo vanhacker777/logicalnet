@@ -24,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="py-32 bg-black">
+    <section id="contacto" className="py-32 relative" style={{background: 'linear-gradient(180deg, #0e1c35 0%, #12243f 50%, #101e38 100%)'}}>
       <div className="max-w-3xl mx-auto px-6">
         <div ref={titleRef} className="text-center mb-16">
           <span className={`scroll-hidden ${titleVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>

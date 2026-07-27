@@ -57,7 +57,7 @@ export default function SpecializedServices() {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation(0.2);
 
   return (
-    <section className="py-32 bg-black">
+    <section className="py-32 relative" style={{background: 'linear-gradient(180deg, #0c1830 0%, #101e38 50%, #0e1c35 100%)'}}>
       <div className="max-w-6xl mx-auto px-6">
         <div ref={titleRef} className="text-center mb-20">
           <span className={`scroll-hidden ${titleVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
