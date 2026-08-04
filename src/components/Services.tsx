@@ -49,7 +49,7 @@ function ServiceItem({ service, index }: { service: typeof services[0]; index: n
         <h3 className="text-3xl sm:text-4xl font-bold text-white mb-4 tracking-tight">
           {service.title}
         </h3>
-        <p className="text-lg text-apple-gray-1 leading-relaxed max-w-lg">
+        <p className="text-lg text-white/80 leading-relaxed max-w-lg">
           {service.description}
         </p>
       </div>

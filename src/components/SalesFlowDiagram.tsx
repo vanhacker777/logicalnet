@@ -47,7 +47,7 @@ export default function SalesFlowDiagram() {
           <h2 className={`scroll-hidden scroll-hidden-delay-1 ${isVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tight`}>
             De la captación a la venta
           </h2>
-          <p className={`scroll-hidden scroll-hidden-delay-2 ${isVisible ? 'scroll-visible' : ''} text-xl text-apple-gray-1 max-w-2xl mx-auto mt-6 leading-relaxed`}>
+          <p className={`scroll-hidden scroll-hidden-delay-2 ${isVisible ? 'scroll-visible' : ''} text-xl text-white/80 max-w-2xl mx-auto mt-6 leading-relaxed`}>
             Un flujo continuo donde la IA convierte cada visita en una venta.
           </p>
         </div>

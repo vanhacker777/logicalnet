@@ -41,7 +41,7 @@ function TestimonialCard({ item }: { item: typeof testimonials[0] }) {
           <p className="text-apple-gray-1 text-sm">{item.role}</p>
         </div>
       </div>
-      <p className="text-apple-gray-1 leading-relaxed mb-6 text-sm">"{item.text}"</p>
+      <p className="text-white/80 leading-relaxed mb-6 text-sm">"{item.text}"</p>
       <div className="flex items-center gap-2 pt-4 border-t border-white/5">
         <span className="text-2xl font-bold text-brand">{item.metric}</span>
         <span className="text-apple-gray-1 text-sm">{item.metricLabel}</span>

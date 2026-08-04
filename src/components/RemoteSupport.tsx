@@ -45,7 +45,7 @@ export default function RemoteSupport() {
               <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4 tracking-tight">
                 IT Support
               </h2>
-              <p className="text-apple-gray-1 leading-relaxed mb-6 text-lg">
+              <p className="text-white/80 leading-relaxed mb-6 text-lg">
                 Departamento bilingue con amplia experiencia. Desde NAS y Synology hasta servidores en la nube.
               </p>
 

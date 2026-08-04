@@ -45,7 +45,7 @@ function CaseItem({ item }: { item: typeof cases[0] }) {
             <span className="text-xl text-apple-gray-1 ml-2">{item.resultLabel}</span>
           </div>
           <h3 className="text-2xl font-bold text-white mb-4">{item.title}</h3>
-          <p className="text-apple-gray-1 leading-relaxed text-lg">{item.description}</p>
+          <p className="text-white/80 leading-relaxed text-lg">{item.description}</p>
         </div>
       </div>
     </div>

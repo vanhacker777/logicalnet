@@ -82,7 +82,7 @@ export default function Projects() {
               </div>
               <span className="text-apple-gray-1 text-sm">{project.url}</span>
               <h3 className="text-xl font-bold text-white mt-1 mb-2">{project.title}</h3>
-              <p className="text-apple-gray-1 text-sm leading-relaxed">{project.description}</p>
+              <p className="text-white/80 text-sm leading-relaxed">{project.description}</p>
               {(project as any).tags && (
                 <div className="flex flex-wrap gap-2 mt-4">
                   {(project as any).tags.map((tag: string) => (

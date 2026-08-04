@@ -34,7 +34,7 @@ function StepItem({ step }: { step: typeof steps[0] }) {
       <div className="flex-1 glass-card rounded-2xl p-8 glass-card-hover transition-all duration-300">
         <span className="md:hidden text-brand text-sm font-bold block mb-2">Paso {step.number}</span>
         <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-        <p className="text-apple-gray-1 leading-relaxed">{step.description}</p>
+        <p className="text-white/80 leading-relaxed">{step.description}</p>
       </div>
     </div>
   );

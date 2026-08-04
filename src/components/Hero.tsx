@@ -38,7 +38,7 @@ export default function Hero() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-brand to-cyan-400">potenciada por IA</span>
             </h1>
 
-            <p className={`scroll-hidden scroll-hidden-delay-2 ${isVisible ? 'scroll-visible' : ''} text-base sm:text-lg text-apple-gray-1 max-w-md mb-8 leading-relaxed font-light`}>
+            <p className={`scroll-hidden scroll-hidden-delay-2 ${isVisible ? 'scroll-visible' : ''} text-base sm:text-lg text-white/80 max-w-md mb-8 leading-relaxed font-light`}>
               Automatización, desarrollo web y soporte IT para empresas que quieren crecer más rápido.
             </p>
 
@@ -64,15 +64,15 @@ export default function Hero() {
               <div className="flex items-center gap-6">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl font-bold text-white">20+</span>
-                  <span className="text-xs text-apple-gray-1 leading-tight">años de<br/>experiencia</span>
+                  <span className="text-xs text-white/60 leading-tight">años de<br/>experiencia</span>
                 </div>
                 <div className="w-px h-8 bg-white/10" />
                 <div className="flex items-center gap-2">
                   <span className="text-2xl font-bold text-white">100+</span>
-                  <span className="text-xs text-apple-gray-1 leading-tight">proyectos<br/>entregados</span>
+                  <span className="text-xs text-white/60 leading-tight">proyectos<br/>entregados</span>
                 </div>
               </div>
-              <div className="flex items-center gap-3 text-sm text-apple-gray-1">
+              <div className="flex items-center gap-3 text-sm text-white/60">
                 <a href="tel:+34601475239" className="hover:text-white transition-colors flex items-center gap-1.5">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
                   601 475 239

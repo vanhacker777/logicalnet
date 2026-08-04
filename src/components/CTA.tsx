@@ -13,7 +13,7 @@ export default function CTA() {
         <h2 className={`scroll-hidden ${isVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight`}>
           ¿Empezamos?
         </h2>
-        <p className={`scroll-hidden scroll-hidden-delay-1 ${isVisible ? 'scroll-visible' : ''} text-xl text-apple-gray-1 mb-12 max-w-2xl mx-auto leading-relaxed`}>
+        <p className={`scroll-hidden scroll-hidden-delay-1 ${isVisible ? 'scroll-visible' : ''} text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed`}>
           Diagnóstico gratuito. Sin compromiso.
         </p>
         <div className={`scroll-hidden scroll-hidden-delay-2 ${isVisible ? 'scroll-visible' : ''} flex flex-col sm:flex-row items-center justify-center gap-4`}>
@@ -36,7 +36,7 @@ export default function CTA() {
             WhatsApp 601 475 239
           </a>
         </div>
-        <p className={`scroll-hidden scroll-hidden-delay-3 ${isVisible ? 'scroll-visible' : ''} text-apple-gray-1 text-sm mt-6`}>
+        <p className={`scroll-hidden scroll-hidden-delay-3 ${isVisible ? 'scroll-visible' : ''} text-white/60 text-sm mt-6`}>
           O llámanos al <a href="tel:+34601475239" className="text-white hover:text-brand transition-colors">601 475 239</a>
         </p>
       </div>

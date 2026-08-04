@@ -48,7 +48,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
         {service.icon}
       </div>
       <h3 className="text-lg font-bold text-white mb-2">{service.title}</h3>
-      <p className="text-apple-gray-1 text-sm leading-relaxed">{service.description}</p>
+      <p className="text-white/80 text-sm leading-relaxed">{service.description}</p>
     </div>
   );
 }
