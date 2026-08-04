@@ -6,6 +6,7 @@ import Services from './components/Services';
 import Process from './components/Process';
 import AICases from './components/AICases';
 import CTA from './components/CTA';
+import FAQ from './components/FAQ';
 import Projects from './components/Projects';
 import RemoteSupport from './components/RemoteSupport';
 import About from './components/About';
@@ -28,6 +29,7 @@ function Home() {
       <Process />
       <AICases />
       <Testimonials />
+      <FAQ />
       <CTA />
       <Projects />
       <RemoteSupport />
