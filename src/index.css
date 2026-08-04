@@ -123,3 +123,41 @@ body {
   background: rgba(15, 30, 70, 0.5);
   border-color: rgba(41, 151, 255, 0.15);
 }
+
+/* --- Dynamic flow diagram --- */
+@keyframes flow-dash {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+@keyframes node-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(41, 151, 255, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(41, 151, 255, 0.8));
+  }
+}
+
+@keyframes float-y {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.flow-line-animated {
+  stroke-dasharray: 6 6;
+  animation: flow-dash 1.2s linear infinite;
+}
+
+.node-glow {
+  animation: node-pulse 2.5s ease-in-out infinite;
+}
+
+.node-float {
+  animation: float-y 4s ease-in-out infinite;
+}

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import SalesFlowDiagram from './components/SalesFlowDiagram';
 import Services from './components/Services';
 import Process from './components/Process';
 import AICases from './components/AICases';
@@ -22,6 +23,7 @@ function Home() {
   return (
     <>
       <Hero />
+      <SalesFlowDiagram />
       <Services />
       <Process />
       <AICases />
