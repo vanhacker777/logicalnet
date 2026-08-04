@@ -15,7 +15,8 @@ import Contact from './components/Contact';
 import SpecializedServices from './components/SpecializedServices';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
+import WhatsAppChat from './components/WhatsAppChat';
+import BeforeAfter from './components/BeforeAfter';
 import PhoneButton from './components/PhoneButton';
 import BackToTop from './components/BackToTop';
 import StatsCounter from './components/StatsCounter';
@@ -36,6 +37,7 @@ function Home() {
       <ClientLogos />
       <Process />
       <AICases />
+      <BeforeAfter />
       <Testimonials />
       <FAQ />
       <CTA />
@@ -63,7 +65,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
-        <WhatsAppButton />
+        <WhatsAppChat />
         <PhoneButton />
         <BackToTop />
       </div>
