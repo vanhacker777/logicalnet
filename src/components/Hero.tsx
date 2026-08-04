@@ -90,7 +90,7 @@ export default function Hero() {
             <div className="relative rounded-3xl overflow-hidden border border-white/10 backdrop-blur-sm">
               <img
                 src="/hero-ai.jpg"
-                alt="IA para empresas"
+                alt="Inteligencia Artificial para empresas y automatización de proceso comerciales"
                 className="w-full h-[420px] object-cover"
                 loading="eager"
               />

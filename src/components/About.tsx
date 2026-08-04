@@ -30,7 +30,7 @@ export default function About() {
             <div className="relative rounded-3xl overflow-hidden">
               <img
                 src="/img-office.jpg"
-                alt="Equipo Logical Net"
+                alt="Equipo de Logical Net especializado en IA, desarrollo web y soporte IT"
                 className="w-full h-96 lg:h-[420px] object-cover"
                 loading="lazy"
               />
