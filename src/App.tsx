@@ -17,6 +17,9 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import PhoneButton from './components/PhoneButton';
+import BackToTop from './components/BackToTop';
+import StatsCounter from './components/StatsCounter';
+import ClientLogos from './components/ClientLogos';
 import Portfolio from './pages/Portfolio';
 import NotFound from './pages/NotFound';
 
@@ -25,7 +28,9 @@ function Home() {
     <>
       <Hero />
       <SalesFlowDiagram />
+      <StatsCounter />
       <Services />
+      <ClientLogos />
       <Process />
       <AICases />
       <Testimonials />
@@ -54,6 +59,7 @@ export default function App() {
         <Footer />
         <WhatsAppButton />
         <PhoneButton />
+        <BackToTop />
       </div>
     </BrowserRouter>
   );
