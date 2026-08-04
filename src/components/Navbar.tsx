@@ -71,7 +71,7 @@ export default function Navbar() {
                 {portfolioLink.label}
               </Link>
               <a
-                href="https://wa.me/34620211374"
+                href="https://wa.me/34601475239"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -93,7 +93,7 @@ export default function Navbar() {
           ) : (
             <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem'}}>
               <a
-                href="https://wa.me/34620211374"
+                href="https://wa.me/34601475239"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -154,7 +154,7 @@ export default function Navbar() {
               {portfolioLink.label}
             </Link>
             <a
-              href="tel:+34620211374"
+              href="tel:+34601475239"
               style={{
                 background: '#2997ff',
                 color: 'white',
@@ -166,7 +166,7 @@ export default function Navbar() {
                 textDecoration: 'none',
               }}
             >
-              Llamar: 620 21 13 74
+              Llamar: 601 475 239
             </a>
           </div>
         </div>

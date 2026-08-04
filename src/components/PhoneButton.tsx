@@ -11,7 +11,7 @@ export default function PhoneButton() {
 
   return (
     <a
-      href="tel:+34620211374"
+      href="tel:+34601475239"
       className={`fixed bottom-6 left-6 z-50 bg-white/10 hover:bg-white/15 text-white w-12 h-12 rounded-full flex items-center justify-center backdrop-blur-xl border border-white/10 transition-all duration-500 hover:scale-110 ${
         visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
       }`}
