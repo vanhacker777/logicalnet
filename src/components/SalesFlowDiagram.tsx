@@ -23,7 +23,7 @@ function Node({
             {icon}
           </div>
           <div className="text-white font-bold text-[13px] leading-tight">{label}</div>
-          <div className="text-apple-gray-1 text-[10px] leading-tight mt-0.5">{sub}</div>
+          <div className="text-white/80 text-[10px] leading-tight mt-0.5">{sub}</div>
         </div>
       </foreignObject>
     </g>
@@ -89,13 +89,13 @@ export default function SalesFlowDiagram() {
           </svg>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mt-8 text-sm">
-            <div className="flex items-center gap-2 text-apple-gray-1">
+            <div className="flex items-center gap-2 text-white/80">
               <span className="w-3 h-3 rounded-full bg-brand" /> Captación
             </div>
-            <div className="flex items-center gap-2 text-apple-gray-1">
+            <div className="flex items-center gap-2 text-white/80">
               <span className="w-3 h-3 rounded-full bg-cyan-400" /> IA
             </div>
-            <div className="flex items-center gap-2 text-apple-gray-1">
+            <div className="flex items-center gap-2 text-white/80">
               <span className="w-3 h-3 rounded-full bg-green-400" /> Venta
             </div>
           </div>
