@@ -21,6 +21,9 @@ import BackToTop from './components/BackToTop';
 import StatsCounter from './components/StatsCounter';
 import ClientLogos from './components/ClientLogos';
 import Portfolio from './pages/Portfolio';
+import PortfolioDetail from './pages/PortfolioDetail';
+import Blog from './pages/Blog';
+import BlogArticle from './pages/BlogArticle';
 import NotFound from './pages/NotFound';
 
 function Home() {
@@ -54,6 +57,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:id" element={<PortfolioDetail />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogArticle />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

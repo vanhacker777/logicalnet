@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { projects } from '../components/Projects';
 
 export default function Portfolio() {
@@ -18,9 +19,10 @@ export default function Portfolio() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <div
+            <Link
               key={index}
-              className={`glass-card rounded-2xl p-8 glass-card-hover transition-all duration-300 group ${
+              to={`/portfolio/${project.title.toLowerCase().replace(/[^a-z]/g, '')}`}
+              className={`glass-card rounded-2xl p-8 glass-card-hover transition-all duration-300 group block hover:scale-[1.01] border border-white/5 hover:border-brand/20 ${
                 (project as any).highlight ? 'ring-1 ring-amber-500/30 sm:col-span-2 lg:col-span-1' : ''
               }`}
             >
@@ -48,7 +50,7 @@ export default function Portfolio() {
                   ))}
                 </div>
               )}
-            </div>
+            </Link>
           ))}
         </div>
 
