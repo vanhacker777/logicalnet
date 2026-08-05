@@ -5,7 +5,7 @@ import CTA from '../components/CTA';
 
 export default function SobreNosotros() {
   return (
-    <div className="pt-24">
+    <div className="pt-32">
       <section className="py-16 text-center" style={{background: 'linear-gradient(180deg, #0d1a30 0%, #0a1428 100%)'}}>
         <div className="max-w-3xl mx-auto px-6">
           <span className="text-brand text-xs tracking-widest uppercase font-medium">Sobre Nosotros</span>
