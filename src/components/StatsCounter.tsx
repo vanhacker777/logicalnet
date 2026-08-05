@@ -53,7 +53,7 @@ export default function StatsCounter() {
   const { ref, isVisible } = useScrollAnimation(0.2);
 
   return (
-    <section className="py-24 relative" style={{background: 'linear-gradient(180deg, #0c1830 0%, #0a1428 100%)'}}>
+    <section className="py-24 relative" style={{background: 'linear-gradient(180deg, #081020 0%, #0a1428 100%)'}}>
       <div ref={ref} className="max-w-5xl mx-auto px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {stats.map((stat, i) => (
