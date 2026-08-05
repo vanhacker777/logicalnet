@@ -97,9 +97,9 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     to={link.href}
-                    style={{color: '#374151', fontSize: '0.9rem', fontWeight: 500, textDecoration: 'none', transition: 'color 0.2s'}}
+                    style={{color: '#0a1628', fontSize: '0.9rem', fontWeight: 700, textDecoration: 'none', transition: 'color 0.2s'}}
                     onMouseEnter={(e) => e.currentTarget.style.color = '#2997ff'}
-                    onMouseLeave={(e) => e.currentTarget.style.color = '#374151'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#0a1628'}
                   >
                     {link.label}
                   </Link>
@@ -114,7 +114,7 @@ export default function Navbar() {
                   <Link
                     to="/contacto"
                     style={{
-                      color: '#374151',
+                      color: '#0a1628',
                       border: '1px solid #e5e7eb',
                       padding: '0.625rem 1.25rem',
                       borderRadius: '0.5rem',
@@ -174,7 +174,7 @@ export default function Navbar() {
                   </a>
                   <button
                     onClick={() => setIsOpen(!isOpen)}
-                    style={{color: '#374151', padding: '0.5rem'}}
+                    style={{color: '#0a1628', padding: '0.5rem'}}
                   >
                     <svg style={{width: '1.5rem', height: '1.5rem'}} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {isOpen ? (
@@ -204,7 +204,7 @@ export default function Navbar() {
                 key={link.href}
                 to={link.href}
                 onClick={() => setIsOpen(false)}
-                style={{color: '#374151', fontSize: '1rem', fontWeight: 500, textDecoration: 'none', padding: '0.75rem 0', borderBottom: '1px solid #f3f4f6'}}
+                style={{color: '#0a1628', fontSize: '1rem', fontWeight: 700, textDecoration: 'none', padding: '0.75rem 0', borderBottom: '1px solid #f3f4f6'}}
               >
                 {link.label}
               </Link>
