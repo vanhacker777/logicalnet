@@ -3,29 +3,20 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SalesFlowDiagram from './components/SalesFlowDiagram';
 import Services from './components/Services';
-import Process from './components/Process';
-import AICases from './components/AICases';
 import CTA from './components/CTA';
-import FAQ from './components/FAQ';
-import Projects from './components/Projects';
-import RemoteSupport from './components/RemoteSupport';
-import About from './components/About';
-import SuccessCases from './components/SuccessCases';
-import Contact from './components/Contact';
-import SpecializedServices from './components/SpecializedServices';
-import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import WhatsAppChat from './components/WhatsAppChat';
-import BeforeAfter from './components/BeforeAfter';
 import PhoneButton from './components/PhoneButton';
 import BackToTop from './components/BackToTop';
-import StatsCounter from './components/StatsCounter';
-import ClientLogos from './components/ClientLogos';
-import LeadCapture from './components/LeadCapture';
 import Portfolio from './pages/Portfolio';
 import PortfolioDetail from './pages/PortfolioDetail';
 import Blog from './pages/Blog';
 import BlogArticle from './pages/BlogArticle';
+import Servicios from './pages/Servicios';
+import Soporte from './pages/Soporte';
+import SobreNosotros from './pages/SobreNosotros';
+import FaqPage from './pages/FaqPage';
+import ContactoPage from './pages/ContactoPage';
 import NotFound from './pages/NotFound';
 
 function Home() {
@@ -33,22 +24,8 @@ function Home() {
     <>
       <Hero />
       <SalesFlowDiagram />
-      <StatsCounter />
       <Services />
-      <ClientLogos />
-      <Process />
-      <AICases />
-      <BeforeAfter />
-      <Testimonials />
-      <FAQ />
       <CTA />
-      <LeadCapture />
-      <Projects />
-      <RemoteSupport />
-      <About />
-      <SuccessCases />
-      <Contact />
-      <SpecializedServices />
     </>
   );
 }
@@ -60,6 +37,11 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/servicios" element={<Servicios />} />
+          <Route path="/soporte" element={<Soporte />} />
+          <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+          <Route path="/faq" element={<FaqPage />} />
+          <Route path="/contacto" element={<ContactoPage />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:id" element={<PortfolioDetail />} />
           <Route path="/blog" element={<Blog />} />

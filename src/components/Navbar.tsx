@@ -20,14 +20,15 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: 'IA & Automatización', href: '/#servicios' },
-    { label: 'Desarrollo Web', href: '/#proyectos' },
-    { label: 'Soporte IT', href: '/#soporte' },
+    { label: 'Servicios', href: '/servicios' },
+    { label: 'Soporte IT', href: '/soporte' },
+    { label: 'Sobre Nosotros', href: '/sobre-nosotros' },
   ];
 
+  const faqLink = { label: 'FAQ', href: '/faq' };
   const portfolioLink = { label: 'Portfolio', href: '/portfolio' };
   const blogLink = { label: 'Blog', href: '/blog' };
-  const contactLink = { label: 'Contacto', href: '/#contacto' };
+  const contactLink = { label: 'Contacto', href: '/contacto' };
 
   return (
     <nav
@@ -54,16 +55,24 @@ export default function Navbar() {
           {isDesktop ? (
             <div style={{display: 'flex', alignItems: 'center', gap: '2rem'}}>
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
+                  to={link.href}
                   style={{color: 'white', fontSize: '0.875rem', fontWeight: 500, textDecoration: 'none', transition: 'color 0.2s'}}
                   onMouseEnter={(e) => e.currentTarget.style.color = '#2997ff'}
                   onMouseLeave={(e) => e.currentTarget.style.color = 'white'}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
+              <Link
+                to={faqLink.href}
+                style={{color: 'white', fontSize: '0.875rem', fontWeight: 500, textDecoration: 'none', transition: 'color 0.2s'}}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#2997ff'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'white'}
+              >
+                {faqLink.label}
+              </Link>
               <Link
                 to={portfolioLink.href}
                 style={{color: 'white', fontSize: '0.875rem', fontWeight: 500, textDecoration: 'none', transition: 'color 0.2s'}}
@@ -80,14 +89,14 @@ export default function Navbar() {
               >
                 {blogLink.label}
               </Link>
-              <a
-                href={contactLink.href}
+              <Link
+                to={contactLink.href}
                 style={{color: 'white', fontSize: '0.875rem', fontWeight: 500, textDecoration: 'none', transition: 'color 0.2s'}}
                 onMouseEnter={(e) => e.currentTarget.style.color = '#2997ff'}
                 onMouseLeave={(e) => e.currentTarget.style.color = 'white'}
               >
                 {contactLink.label}
-              </a>
+              </Link>
               <a
                 href="tel:+34601475239"
                 style={{
@@ -160,15 +169,22 @@ export default function Navbar() {
         }}>
           <div style={{padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem'}}>
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                to={link.href}
                 onClick={() => setIsOpen(false)}
                 style={{color: '#86868b', fontSize: '1rem', textDecoration: 'none', padding: '0.5rem 0'}}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
+            <Link
+              to={faqLink.href}
+              onClick={() => setIsOpen(false)}
+              style={{color: '#86868b', fontSize: '1rem', textDecoration: 'none', padding: '0.5rem 0'}}
+            >
+              {faqLink.label}
+            </Link>
             <Link
               to={portfolioLink.href}
               onClick={() => setIsOpen(false)}
@@ -183,13 +199,13 @@ export default function Navbar() {
             >
               {blogLink.label}
             </Link>
-            <a
-              href={contactLink.href}
+            <Link
+              to={contactLink.href}
               onClick={() => setIsOpen(false)}
               style={{color: '#86868b', fontSize: '1rem', textDecoration: 'none', padding: '0.5rem 0'}}
             >
               {contactLink.label}
-            </a>
+            </Link>
             <a
               href="tel:+34601475239"
               style={{

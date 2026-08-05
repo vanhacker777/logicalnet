@@ -38,10 +38,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4 text-sm">Servicios</h3>
             <ul className="space-y-3">
-              <li><a href="/#servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">IA & Automatización</a></li>
-              <li><a href="/#proyectos" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Desarrollo Web</a></li>
-              <li><a href="/#soporte" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Soporte IT</a></li>
-              <li><a href="/#servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Marketing Digital</a></li>
+              <li><Link to="/servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">IA & Automatización</Link></li>
+              <li><Link to="/servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Desarrollo Web</Link></li>
+              <li><Link to="/soporte" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Soporte IT</Link></li>
+              <li><Link to="/servicios" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Marketing Digital</Link></li>
             </ul>
           </div>
 
@@ -49,8 +49,9 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4 text-sm">Empresa</h3>
             <ul className="space-y-3">
               <li><Link to="/portfolio" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Portfolio</Link></li>
-              <li><a href="/#about" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Sobre nosotros</a></li>
-              <li><a href="/#contacto" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Contacto</a></li>
+              <li><Link to="/sobre-nosotros" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Sobre nosotros</Link></li>
+              <li><Link to="/faq" className="text-apple-gray-1 hover:text-white text-sm transition-colors">FAQ</Link></li>
+              <li><Link to="/contacto" className="text-apple-gray-1 hover:text-white text-sm transition-colors">Contacto</Link></li>
             </ul>
           </div>
         </div>

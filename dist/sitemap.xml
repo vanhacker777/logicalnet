@@ -6,38 +6,63 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://logicalnet.es/portfolio</loc>
+    <loc>https://logicalnet.es/servicios</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://logicalnet.es/blog</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://logicalnet.es/soporte</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://logicalnet.es/sobre-nosotros</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://logicalnet.es/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://logicalnet.es/contacto</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://logicalnet.es/blog/ia-aumenta-ventas-pymes</loc>
+    <loc>https://logicalnet.es/portfolio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://logicalnet.es/blog/migracion-nube-pymes</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://logicalnet.es/blog</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://logicalnet.es/blog/automatizar-procesos-repetitivos</loc>
+    <loc>https://logicalnet.es/blog/ia-ventas</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://logicalnet.es/blog/ciberseguridad-pymes</loc>
+    <loc>https://logicalnet.es/blog/cloud</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://logicalnet.es/blog/desarrollo-web-rapido</loc>
+    <loc>https://logicalnet.es/blog/automatizacion</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://logicalnet.es/blog/ciberseguridad</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://logicalnet.es/blog/desarrollo-web</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

@@ -44,7 +44,7 @@ export default function Hero() {
 
             <div className={`scroll-hidden scroll-hidden-delay-3 ${isVisible ? 'scroll-visible' : ''} flex flex-wrap items-center gap-4 mb-10`}>
               <a
-                href="#contacto"
+                href="/contacto"
                 className="bg-brand hover:bg-brand-dark text-white px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-brand/25 flex items-center gap-2"
               >
                 Diagnóstico gratuito
@@ -53,7 +53,7 @@ export default function Hero() {
                 </svg>
               </a>
               <a
-                href="#soporte"
+                href="/soporte"
                 className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2"
               >
                 Ver soporte IT
