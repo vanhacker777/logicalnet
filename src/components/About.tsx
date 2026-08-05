@@ -5,23 +5,23 @@ export default function About() {
   const { ref: imageRef, isVisible: imageVisible } = useScrollAnimation(0.2);
 
   return (
-    <section className="py-32 relative" style={{background: 'linear-gradient(180deg, #0c1830 0%, #101e38 50%, #0e1c35 100%)'}}>
+    <section className="py-32 relative" style={{background: 'linear-gradient(180deg, #f5f7fa 0%, #ffffff 50%, #f5f7fa 100%)'}}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div ref={textRef}>
             <span className={`scroll-hidden ${textVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
               Sobre Nosotros
             </span>
-            <h2 className={`scroll-hidden scroll-hidden-delay-1 ${textVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl font-bold text-white mt-4 mb-8 tracking-tight`}>
+            <h2 className={`scroll-hidden scroll-hidden-delay-1 ${textVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl font-bold text-gray-900 mt-4 mb-8 tracking-tight`}>
               Logical Net
             </h2>
-            <p className={`scroll-hidden scroll-hidden-delay-2 ${textVisible ? 'scroll-visible' : ''} text-xl text-white/80 leading-relaxed mb-6`}>
-              Empresa dedicada a ofrecer <strong className="text-white font-semibold">soluciones de IT a PYMEs</strong>. Optimizamos procesos y mejoramos la experiencia del usuario.
+            <p className={`scroll-hidden scroll-hidden-delay-2 ${textVisible ? 'scroll-visible' : ''} text-xl text-gray-600 leading-relaxed mb-6`}>
+              Empresa dedicada a ofrecer <strong className="text-gray-900 font-semibold">soluciones de IT a PYMEs</strong>. Optimizamos procesos y mejoramos la experiencia del usuario.
             </p>
-            <p className={`scroll-hidden scroll-hidden-delay-3 ${textVisible ? 'scroll-visible' : ''} text-lg text-white/80 leading-relaxed mb-6`}>
+            <p className={`scroll-hidden scroll-hidden-delay-3 ${textVisible ? 'scroll-visible' : ''} text-lg text-gray-600 leading-relaxed mb-6`}>
               Nuestro equipo está formado por expertos apasionados por la tecnología. Trabajamos de la mano con nuestros clientes.
             </p>
-            <p className={`scroll-hidden scroll-hidden-delay-3 ${textVisible ? 'scroll-visible' : ''} text-lg text-white/80 leading-relaxed`}>
+            <p className={`scroll-hidden scroll-hidden-delay-3 ${textVisible ? 'scroll-visible' : ''} text-lg text-gray-600 leading-relaxed`}>
               Fundada por <strong className="text-brand">Vicente Balseiro</strong>, con más de 20 años de experiencia.
             </p>
           </div>
@@ -37,13 +37,13 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </div>
             <div className="absolute -bottom-8 left-8 right-8 grid grid-cols-2 gap-4">
-              <div className="glass-card rounded-2xl p-5 text-center backdrop-blur-xl">
-                <div className="text-3xl font-bold text-white mb-1">20+</div>
-                <div className="text-white/80 text-sm">Años de experiencia</div>
+              <div className="glass-card-light rounded-2xl p-5 text-center">
+                <div className="text-3xl font-bold text-gray-900 mb-1">20+</div>
+                <div className="text-gray-600 text-sm">Años de experiencia</div>
               </div>
-              <div className="glass-card rounded-2xl p-5 text-center backdrop-blur-xl">
-                <div className="text-3xl font-bold text-white mb-1">100+</div>
-                <div className="text-white/80 text-sm">Proyectos realizados</div>
+              <div className="glass-card-light rounded-2xl p-5 text-center">
+                <div className="text-3xl font-bold text-gray-900 mb-1">100+</div>
+                <div className="text-gray-600 text-sm">Proyectos realizados</div>
               </div>
             </div>
           </div>

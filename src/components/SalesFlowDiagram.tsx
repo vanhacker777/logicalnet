@@ -18,12 +18,12 @@ function Node({
   return (
     <g style={{ animationDelay: delay }} className="node-pulse">
       <foreignObject x={x - 70} y={y - 38} width={140} height={100}>
-        <div className="glass-card rounded-2xl px-3 py-2 flex flex-col items-center text-center hover:border-brand/30 transition-colors duration-300">
+        <div className="glass-card-light rounded-2xl px-3 py-2 flex flex-col items-center text-center hover:border-brand/30 transition-colors duration-300">
           <div className="text-xl leading-none mb-1" style={{ filter: 'saturate(1.2)' }}>
             {icon}
           </div>
-          <div className="text-white font-bold text-[13px] leading-tight">{label}</div>
-          <div className="text-white/80 text-[10px] leading-tight mt-0.5">{sub}</div>
+          <div className="text-gray-900 font-bold text-[13px] leading-tight">{label}</div>
+          <div className="text-gray-600 text-[10px] leading-tight mt-0.5">{sub}</div>
         </div>
       </foreignObject>
     </g>
@@ -34,9 +34,9 @@ export default function SalesFlowDiagram() {
   const { ref, isVisible } = useScrollAnimation(0.1);
 
   return (
-    <section className="py-32 relative overflow-hidden" style={{background: 'linear-gradient(180deg, #0c1830 0%, #0e1c35 50%, #0a1428 100%)'}}>
+    <section className="py-32 relative overflow-hidden" style={{background: 'linear-gradient(180deg, #f5f7fa 0%, #ffffff 50%, #f5f7fa 100%)'}}>
       <div className="absolute inset-0">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-brand/10 rounded-full blur-[120px]" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-brand/5 rounded-full blur-[120px]" />
       </div>
 
       <div ref={ref} className="relative max-w-5xl mx-auto px-6">
@@ -44,10 +44,10 @@ export default function SalesFlowDiagram() {
           <span className={`scroll-hidden ${isVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
             Cómo lo hacemos
           </span>
-          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${isVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tight`}>
+          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${isVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-4 tracking-tight`}>
             De la captación a la venta
           </h2>
-          <p className={`scroll-hidden scroll-hidden-delay-2 ${isVisible ? 'scroll-visible' : ''} text-xl text-white/80 max-w-2xl mx-auto mt-6 leading-relaxed`}>
+          <p className={`scroll-hidden scroll-hidden-delay-2 ${isVisible ? 'scroll-visible' : ''} text-xl text-gray-600 max-w-2xl mx-auto mt-6 leading-relaxed`}>
             Un flujo continuo donde la IA convierte cada visita en una venta.
           </p>
         </div>
@@ -89,13 +89,13 @@ export default function SalesFlowDiagram() {
           </svg>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mt-8 text-sm">
-            <div className="flex items-center gap-2 text-white/80">
+            <div className="flex items-center gap-2 text-gray-600">
               <span className="w-3 h-3 rounded-full bg-brand" /> Captación
             </div>
-            <div className="flex items-center gap-2 text-white/80">
+            <div className="flex items-center gap-2 text-gray-600">
               <span className="w-3 h-3 rounded-full bg-cyan-400" /> IA
             </div>
-            <div className="flex items-center gap-2 text-white/80">
+            <div className="flex items-center gap-2 text-gray-600">
               <span className="w-3 h-3 rounded-full bg-green-400" /> Venta
             </div>
           </div>

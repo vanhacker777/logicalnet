@@ -119,6 +119,14 @@ body {
   border: 1px solid rgba(41, 151, 255, 0.08);
 }
 
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
 .glass-card-hover:hover {
   background: rgba(15, 30, 70, 0.5);
   border-color: rgba(41, 151, 255, 0.15);

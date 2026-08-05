@@ -42,17 +42,17 @@ function ServiceItem({ service, index }: { service: typeof services[0]; index: n
       ref={ref}
       className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-16 items-center`}
     >
-      <div className={`flex-1 ${isReversed ? 'scroll-right' : 'scroll-left'} ${isVisible ? 'scroll-visible' : ''}`}>
-        <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-brand mb-6">
-          {service.icon}
+        <div className={`flex-1 ${isReversed ? 'scroll-right' : 'scroll-left'} ${isVisible ? 'scroll-visible' : ''}`}>
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-brand/10 border border-brand/20 text-brand mb-6">
+            {service.icon}
+          </div>
+          <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+            {service.title}
+          </h3>
+          <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
+            {service.description}
+          </p>
         </div>
-        <h3 className="text-3xl sm:text-4xl font-bold text-white mb-4 tracking-tight">
-          {service.title}
-        </h3>
-        <p className="text-lg text-white/80 leading-relaxed max-w-lg">
-          {service.description}
-        </p>
-      </div>
       <div className={`flex-1 w-full scroll-scale ${isVisible ? 'scroll-visible' : ''}`}>
         <div className="relative rounded-3xl overflow-hidden group">
           <img
@@ -72,13 +72,13 @@ export default function Services() {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation(0.2);
 
   return (
-    <section id="servicios" className="py-32 relative" style={{background: 'linear-gradient(180deg, #081020 0%, #0c1830 50%, #0a1428 100%)'}}>
+    <section id="servicios" className="py-32 relative" style={{background: 'linear-gradient(180deg, #ffffff 0%, #f5f7fa 50%, #ffffff 100%)'}}>
       <div className="max-w-6xl mx-auto px-6">
         <div ref={titleRef} className="text-center mb-20">
           <span className={`scroll-hidden ${titleVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
             Servicios
           </span>
-          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 mb-6 tracking-tight`}>
+          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-4 mb-6 tracking-tight`}>
             Que hacemos
           </h2>
         </div>

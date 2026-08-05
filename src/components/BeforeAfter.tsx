@@ -23,7 +23,7 @@ export default function BeforeAfter() {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation(0.2);
 
   return (
-    <section className="py-32 relative overflow-hidden" style={{background: 'linear-gradient(180deg, #0c1830 0%, #0e1c35 50%, #101e38 100%)'}}>
+    <section className="py-32 relative overflow-hidden" style={{background: 'linear-gradient(180deg, #ffffff 0%, #f5f7fa 50%, #ffffff 100%)'}}>
       <div className="absolute inset-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand/5 rounded-full blur-[150px]" />
       </div>
@@ -33,10 +33,10 @@ export default function BeforeAfter() {
           <span className={`scroll-hidden ${titleVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
             Transformación
           </span>
-          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tight`}>
+          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-4 tracking-tight`}>
             Antes vs Después de la IA
           </h2>
-          <p className={`scroll-hidden scroll-hidden-delay-2 ${titleVisible ? 'scroll-visible' : ''} text-white/80 text-lg mt-6 max-w-2xl mx-auto`}>
+          <p className={`scroll-hidden scroll-hidden-delay-2 ${titleVisible ? 'scroll-visible' : ''} text-gray-600 text-lg mt-6 max-w-2xl mx-auto`}>
             Mira cómo cambia tu empresa cuando implementas inteligencia artificial.
           </p>
         </div>
@@ -58,14 +58,14 @@ function ComparisonRow({ item }: { item: typeof comparisons[0] }) {
     <div ref={ref} className={`scroll-hidden ${isVisible ? 'scroll-visible' : ''}`}>
       <div className="grid md:grid-cols-2 gap-4 sm:gap-6 items-center">
         {/* Before */}
-        <div className="glass-card rounded-2xl p-6 sm:p-8 border border-white/5 bg-red-500/[0.03] relative overflow-hidden">
+        <div className="glass-card-light rounded-2xl p-6 sm:p-8 border border-gray-200 bg-red-50 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1 bg-red-500/30" />
           <span className="text-red-400/60 text-xs font-medium uppercase tracking-widest mb-3 block">Antes</span>
           <div className="flex items-start gap-4">
             <span className="text-3xl">{item.before.icon}</span>
             <div>
-              <h3 className="text-white font-bold text-lg">{item.before.title}</h3>
-              <p className="text-white/60 text-sm mt-1">{item.before.desc}</p>
+              <h3 className="text-gray-900 font-bold text-lg">{item.before.title}</h3>
+              <p className="text-gray-500 text-sm mt-1">{item.before.desc}</p>
             </div>
           </div>
         </div>
@@ -78,14 +78,14 @@ function ComparisonRow({ item }: { item: typeof comparisons[0] }) {
         </div>
 
         {/* After */}
-        <div className="glass-card rounded-2xl p-6 sm:p-8 border border-green-500/10 bg-green-500/[0.03] relative overflow-hidden">
+        <div className="glass-card-light rounded-2xl p-6 sm:p-8 border border-gray-200 bg-green-50 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1 bg-green-500/30" />
           <span className="text-green-400/60 text-xs font-medium uppercase tracking-widest mb-3 block">Después</span>
           <div className="flex items-start gap-4">
             <span className="text-3xl">{item.after.icon}</span>
             <div>
-              <h3 className="text-white font-bold text-lg">{item.after.title}</h3>
-              <p className="text-white/60 text-sm mt-1">{item.after.desc}</p>
+              <h3 className="text-gray-900 font-bold text-lg">{item.after.title}</h3>
+              <p className="text-gray-500 text-sm mt-1">{item.after.desc}</p>
             </div>
           </div>
         </div>

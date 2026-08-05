@@ -38,12 +38,12 @@ const faqs = [
 
 function FAQItem({ faq, isOpen, toggle }: { faq: typeof faqs[0]; isOpen: boolean; toggle: () => void }) {
   return (
-    <div className="border-b border-white/10 last:border-b-0">
+    <div className="border-b border-gray-200 last:border-b-0">
       <button
         onClick={toggle}
-        className="w-full flex items-center justify-between py-5 px-6 text-left hover:bg-white/5 transition-colors duration-200 rounded-xl"
+        className="w-full flex items-center justify-between py-5 px-6 text-left hover:bg-gray-100 transition-colors duration-200 rounded-xl"
       >
-        <span className="text-white font-medium text-base pr-4">{faq.q}</span>
+        <span className="text-gray-900 font-medium text-base pr-4">{faq.q}</span>
         <svg
           className={`w-5 h-5 text-brand flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
@@ -56,7 +56,7 @@ function FAQItem({ faq, isOpen, toggle }: { faq: typeof faqs[0]; isOpen: boolean
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
       >
-        <p className="px-6 pb-5 text-white/80 leading-relaxed text-sm">{faq.a}</p>
+        <p className="px-6 pb-5 text-gray-600 leading-relaxed text-sm">{faq.a}</p>
       </div>
     </div>
   );
@@ -68,21 +68,21 @@ export default function FAQ() {
   const { ref: listRef, isVisible: listVisible } = useScrollAnimation(0.1);
 
   return (
-    <section id="faq" className="py-32 relative" style={{background: 'linear-gradient(180deg, #0e1c35 0%, #0c1830 50%, #0a1428 100%)'}}>
+    <section id="faq" className="py-32 relative" style={{background: 'linear-gradient(180deg, #f5f7fa 0%, #ffffff 50%, #f5f7fa 100%)'}}>
       <div className="max-w-3xl mx-auto px-6">
         <div ref={titleRef} className="text-center mb-16">
           <span className={`scroll-hidden ${titleVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
             FAQ
           </span>
-          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl font-bold text-white mt-4 tracking-tight`}>
+          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl font-bold text-gray-900 mt-4 tracking-tight`}>
             Preguntas frecuentes
           </h2>
-          <p className={`scroll-hidden scroll-hidden-delay-2 ${titleVisible ? 'scroll-visible' : ''} text-white/80 text-lg mt-4 max-w-xl mx-auto`}>
+          <p className={`scroll-hidden scroll-hidden-delay-2 ${titleVisible ? 'scroll-visible' : ''} text-gray-600 text-lg mt-4 max-w-xl mx-auto`}>
             Resolvemos tus dudas antes de que las tengas.
           </p>
         </div>
 
-        <div ref={listRef} className={`scroll-hidden ${listVisible ? 'scroll-visible' : ''} glass-card rounded-2xl overflow-hidden border border-white/10`}>
+        <div ref={listRef} className={`scroll-hidden ${listVisible ? 'scroll-visible' : ''} glass-card-light rounded-2xl overflow-hidden border border-gray-200`}>
           {faqs.map((faq, i) => (
             <FAQItem
               key={i}
@@ -93,7 +93,7 @@ export default function FAQ() {
           ))}
         </div>
 
-        <p className={`scroll-hidden scroll-hidden-delay-3 ${listVisible ? 'scroll-visible' : ''} text-center text-white/60 text-sm mt-8`}>
+        <p className={`scroll-hidden scroll-hidden-delay-3 ${listVisible ? 'scroll-visible' : ''} text-center text-gray-500 text-sm mt-8`}>
           ¿No encuentras tu pregunta? <a href="https://wa.me/34601475239" target="_blank" rel="noopener noreferrer" className="text-brand hover:text-brand-dark transition-colors">Pregúntanos por WhatsApp</a>
         </p>
       </div>

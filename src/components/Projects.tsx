@@ -49,13 +49,13 @@ export default function Projects() {
   const { ref: gridRef, isVisible: gridVisible } = useScrollAnimation(0.1);
 
   return (
-    <section id="proyectos" className="py-32 relative" style={{background: 'linear-gradient(180deg, #101e38 0%, #0c1830 50%, #0a1428 100%)'}}>
+    <section id="proyectos" className="py-32 relative" style={{background: 'linear-gradient(180deg, #ffffff 0%, #f5f7fa 50%, #ffffff 100%)'}}>
       <div className="max-w-6xl mx-auto px-6">
         <div ref={titleRef} className="text-center mb-20">
           <span className={`scroll-hidden ${titleVisible ? 'scroll-visible' : ''} text-brand text-sm font-medium tracking-widest uppercase`}>
             Portfolio
           </span>
-          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tight`}>
+          <h2 className={`scroll-hidden scroll-hidden-delay-1 ${titleVisible ? 'scroll-visible' : ''} text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-4 tracking-tight`}>
             Qué creamos
           </h2>
         </div>
@@ -64,13 +64,13 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`glass-card rounded-2xl p-8 glass-card-hover transition-all duration-300 group cursor-pointer ${
+              className={`glass-card-light rounded-2xl p-8 hover:border-brand/20 transition-all duration-300 group cursor-pointer ${
                 (project as any).highlight ? 'ring-1 ring-amber-500/30' : ''
               }`}
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${project.gradient} border ${project.border} flex items-center justify-center`}>
-                  <svg className="w-5 h-5 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                   </svg>
                 </div>
@@ -80,13 +80,13 @@ export default function Projects() {
                   </span>
                 )}
               </div>
-              <span className="text-apple-gray-1 text-sm">{project.url}</span>
-              <h3 className="text-xl font-bold text-white mt-1 mb-2">{project.title}</h3>
-              <p className="text-white/80 text-sm leading-relaxed">{project.description}</p>
+              <span className="text-gray-500 text-sm">{project.url}</span>
+              <h3 className="text-xl font-bold text-gray-900 mt-1 mb-2">{project.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{project.description}</p>
               {(project as any).tags && (
                 <div className="flex flex-wrap gap-2 mt-4">
                   {(project as any).tags.map((tag: string) => (
-                    <span key={tag} className="text-xs bg-white/5 border border-white/10 text-white/60 px-2.5 py-1 rounded-full">
+                    <span key={tag} className="text-xs bg-gray-100 border border-gray-200 text-gray-600 px-2.5 py-1 rounded-full">
                       {tag}
                     </span>
                   ))}
@@ -99,7 +99,7 @@ export default function Projects() {
         <div className={`scroll-hidden ${gridVisible ? 'scroll-visible' : ''} text-center`}>
           <a
             href="/portfolio"
-            className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300"
+            className="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 border border-gray-200 text-gray-900 px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300"
           >
             Ver todo
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
