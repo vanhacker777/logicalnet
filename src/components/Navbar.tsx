@@ -27,6 +27,7 @@ export default function Navbar() {
 
   const portfolioLink = { label: 'Portfolio', href: '/portfolio' };
   const blogLink = { label: 'Blog', href: '/blog' };
+  const contactLink = { label: 'Contacto', href: '/#contacto' };
 
   return (
     <nav
@@ -79,6 +80,14 @@ export default function Navbar() {
               >
                 {blogLink.label}
               </Link>
+              <a
+                href={contactLink.href}
+                style={{color: 'white', fontSize: '0.875rem', fontWeight: 500, textDecoration: 'none', transition: 'color 0.2s'}}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#2997ff'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'white'}
+              >
+                {contactLink.label}
+              </a>
               <a
                 href="https://wa.me/34601475239"
                 target="_blank"
@@ -169,6 +178,13 @@ export default function Navbar() {
             >
               {blogLink.label}
             </Link>
+            <a
+              href={contactLink.href}
+              onClick={() => setIsOpen(false)}
+              style={{color: '#86868b', fontSize: '1rem', textDecoration: 'none', padding: '0.5rem 0'}}
+            >
+              {contactLink.label}
+            </a>
             <a
               href="tel:+34601475239"
               style={{
