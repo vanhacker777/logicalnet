@@ -86,11 +86,8 @@ export default function Navbar() {
         <div style={{maxWidth: '72rem', margin: '0 auto', padding: '0 1.5rem'}}>
           <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '4.5rem'}}>
             {/* Logo */}
-            <Link to="/" style={{display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none'}}>
-              <img src="/logo.png" alt="Logical Net" style={{height: '2.25rem', width: 'auto'}} />
-              <span style={{fontSize: '1.25rem', fontWeight: 700, color: '#0a1628', letterSpacing: '-0.02em'}}>
-                Logical<span style={{color: '#2997ff'}}>Net</span>
-              </span>
+            <Link to="/" style={{display: 'flex', alignItems: 'center', textDecoration: 'none'}}>
+              <img src="/logo.png" alt="Logical Net" style={{height: '2.5rem', width: 'auto'}} />
             </Link>
 
             {/* Desktop Nav */}
