@@ -21,6 +21,7 @@ import PhoneButton from './components/PhoneButton';
 import BackToTop from './components/BackToTop';
 import StatsCounter from './components/StatsCounter';
 import ClientLogos from './components/ClientLogos';
+import LeadCapture from './components/LeadCapture';
 import Portfolio from './pages/Portfolio';
 import PortfolioDetail from './pages/PortfolioDetail';
 import Blog from './pages/Blog';
@@ -41,6 +42,7 @@ function Home() {
       <Testimonials />
       <FAQ />
       <CTA />
+      <LeadCapture />
       <Projects />
       <RemoteSupport />
       <About />
