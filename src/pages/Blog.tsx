@@ -4,19 +4,28 @@ import { blogPosts } from '../data/blog';
 export default function Blog() {
   return (
     <section className="pt-32 pb-20 min-h-screen" style={{background: '#080c18'}}>
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="text-brand text-sm font-medium tracking-widest uppercase">
-            Blog
-          </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tight">
-            Artículos
+      <div className="relative overflow-hidden py-24 sm:py-32" style={{background: 'linear-gradient(135deg, #0a1628 0%, #0d1a30 40%, #081020 100%)'}}>
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-brand/10 rounded-full blur-[150px]" />
+          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-blue-600/8 rounded-full blur-[120px]" />
+        </div>
+        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px'}} />
+        <div className="relative max-w-5xl mx-auto px-6 text-center">
+          <div className="inline-flex items-center gap-2 bg-brand/10 border border-brand/20 rounded-full px-4 py-1.5 mb-6">
+            <span className="w-1.5 h-1.5 bg-brand rounded-full animate-pulse" />
+            <span className="text-brand text-xs tracking-widest uppercase font-medium">Blog</span>
+          </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">
+            Artículos y{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-brand to-cyan-400">noticias</span>
           </h1>
-          <p className="text-white/80 text-lg mt-4 max-w-2xl mx-auto">
-            Ideas y consejos sobre IA, automatización y tecnología para empresas.
+          <p className="text-white/60 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
+            Ideas, consejos y tendencias sobre IA, automatización y tecnología para empresas.
           </p>
         </div>
+      </div>
 
+      <div className="max-w-4xl mx-auto px-6">
         <div className="space-y-6">
           {blogPosts.map((post) => (
             <Link
